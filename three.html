@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>租房</title>
+	<link rel="stylesheet" href="css/three.css">
+	<script src="js/list.js"></script>
+	<script src="js/tab.js"></script>
+</head>
+<body>
+	<div id="header">
+		<div class="headerCon">
+			<div class="city">
+				<a href="" class="dangqian">北京</a>
+				<a href="">[切换城市]</a>
+			</div>
+			<a href="index.html" class="shouye">赶集首页</a>
+			<div class="headerConR">
+				<div class="phonegan">
+					<img src="imgs/littlepho.jpg" alt="">
+					<span id="shouji">手机赶集
+						<img src="imgs/ganji.png" alt="" id="ganji"></span>
+				</div>
+				<div class="zhudeng">
+					<a href="">免费注册</a>
+					<a href="">会员登录</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="head-cont">
+		<div class="head-cont">
+			<a href="index.html"><img src="imgs/logodetail.png" alt=""></a>
+			<ul class="xuanze">
+				<li><a href="" class="first">租房</a></li>
+				<li><a href="">二手房</a></li>
+				<li><a href="">商铺</a></li>
+				<li><a href="">写字楼</a></li>
+				<li><a href="">厂房</a></li>
+				<li><a href="">仓库</a></li>
+				<li><a href="">生意转让</a></li>
+				<li><a href="">土地</a></li>
+				<li><a href="">车位</a></li>
+			</ul>
+			<div class="sear">
+			<form action="">
+				<div id="search">
+					<input type="text" placeholder="开始找房" id="search-text">
+					<input type="submit" id="sub" value="搜索">
+				</div>
+			</form>
+			</div>
+			<div class="fabu">免费发布信息</div>
+	</div>
+	<div id="nav">
+		<div class="weizhi">
+			<a href="">北京赶集</a>>
+			<a href="">北京房产</a>>
+			<h1>北京租房</h1>
+		</div>
+		<div id="cont">
+			<dl class="item one">
+				<dt class="title">位置:</dt>
+				<dd class="con">
+					<ul class="quyu">
+						<li>  
+							<a href="" class="bigtitle">区域</a>
+							<img src="imgs/actxl.jpg" alt="">
+						</li>
+						<li>
+							<a href="">地铁</a>
+							<img src="imgs/xl.jpg" alt="">
+						</li>
+					</ul>
+					<ul class="buxian">
+						<li><a href="" class="bigtitle">不限</a></li>
+						<!-- <li><a href="">朝阳</a></li> -->
+						<script>
+						var str="";
+						for(var i in arr["buxian"]){
+							str+="<li><a href=\"\">"+arr["buxian"][i]+"</a></li>";
+						}
+						document.write(str);
+						</script>
+					</ul>
+				</dd>
+			</dl>
+			<dl class="item two">
+				<dt class="title">租金:</dt>
+				<dd class="con">
+					<ul class="zujin">
+						<li><a href="" class="bigtitle">不限</a></li>
+						<!-- <li><a href="">朝阳</a></li> -->
+						<script>
+						var str="";
+						for(var i in arr["zujin"]){
+							str+="<li><a href=\"\">"+arr["zujin"][i]+"</a></li>";
+						}
+						document.write(str);
+						</script>
+					</ul>
+					<input type="text" class="input"><span>-</span><input type="text" class="input"><span>元</span><div class="submit">确定</div>
+				</dd>
+			</dl>
+			<dl class="item three">
+				<dt class="title">厅室:</dt>
+				<dd class="con">
+					<ul class="zujin">
+						<li><a href="" class="bigtitle">不限</a></li>
+						<!-- <li><a href="">朝阳</a></li> -->
+						<script>
+						var str="";
+						for(var i in arr["shi"]){
+							str+="<li><a href=\"\">"+arr["shi"][i]+"</a></li>";
+						}
+						document.write(str);
+						</script>
+					</ul>
+				</dd>
+			</dl>
+			<dl class="item four">
+				<dt class="title">方式:</dt>
+				<dd class="con">
+					<ul class="zujin">
+						<li><a href="" >不限</a></li>
+						<li><a href="" class="bigtitle">整套出租</a></li>
+						<li><a href="" >单间出租</a></li>
+					</ul>
+				</dd>
+			</dl>
+			<dl class="item five">
+				<dt class="title">其他:</dt>
+				<dd class="con">
+					<div class="select">
+					<a href="">朝向不限</a>
+					<img src="imgs/bigxl.jpg" alt="">
+					</div>
+					<ul class="yinul">
+						<li><a href="">朝向不限</a></li>
+						<li><a href="">东</a></li>
+						<li><a href="">南</a></li>
+						<li><a href="">西</a></li>
+						<li><a href="">北</a></li>
+						<li><a href="">南北</a></li>
+						<li><a href="">东西</a></li>
+						<li><a href="">东南</a></li>
+						<li><a href="">西南</a></li>
+						<li><a href="">西南</a></li>
+						<li><a href="">西南</a></li>
+						<li><a href="">东北</a></li>
+						<li><a href="">西北</a></li>
+					</ul>
+					<div class="select1">
+					<a href="">装修不限</a>
+					<img src="imgs/bigxl.jpg" alt="">
+					</div>
+					<ul class=" yinul1">
+						<li><a href="">装修不限</a></li>
+						<li><a href="">毛坯</a></li>
+						<li><a href="">简单装修</a></li>
+						<li><a href="">中等装修</a></li>
+						<li><a href="">精装修</a></li>
+						<li><a href="">豪华装修</a></li>
+					</ul>
+				</dd>
+			</dl>
+		</div>
+		<div class="navlist">
+			<ul>
+				<li class="currentli"><a href="">全部房源</a></li>
+				<li><a href="">个人房源</a></li>
+				<li><a href="">经纪人</a></li>
+				<li><a href="">安选房源</a></li>
+				<li><a href="">品牌公寓</a></li>
+			</ul>
+		</div>
+		<div class="navlistCon">
+			<dl class="listCon">
+				<dt><img src="imgs/fang_0.png" alt=""></dt>
+				<dd><a href="" class="Toptitle">品牌公寓馆</a></dd>
+				<dd class="littleT">高品质租住生活</dd>
+				<dd class="quanbu">
+					<a href="">
+						<img src="imgs/kuangzhan.jpg" alt="">
+						<p>查看所有房源</p>
+					</a>
+				</dd>
+			</dl>
+		</div>
+		<div class="navlistCon">
+			<dl class="listCon">
+				<dt><img src="imgs/listpic_0.jpg" alt=""></dt>
+				<dd class="listCon-title"><a href="">出门公交站通北京三季市场 纳丹堡两室一厅电梯房 拎包入住</a></dd>
+				<dd class="size">
+					<span>2室1厅1卫</span>
+					<span class="line">|</span>
+					<span>82㎡</span>
+					<span class="line">|</span>
+					<span>南向</span>
+					<span class="line">|</span>
+					<span>精装修</span>
+				</dd>
+				<dd class="addr">
+					<span>燕郊 - 纳丹堡...</span>
+				</dd>
+				<dd class="size">
+					<span>来自经纪人： 广发 - 广发地产酒仙桥店 - 李佳</span>
+				</dd>
+				<dd class="bigprice">
+					<span class="num">1600</span>
+					<span>元/月</span>
+				</dd>
+			</dl>
+		</div>
+		<div class="navlistCon">
+			<dl class="listCon">
+				<dt><img src="imgs/listpic_0.jpg" alt=""></dt>
+				<dd class="listCon-title"><a href="">出门公交站通北京三季市场 纳丹堡两室一厅电梯房 拎包入住</a></dd>
+				<dd class="size">
+					<span>2室1厅1卫</span>
+					<span class="line">|</span>
+					<span>82㎡</span>
+					<span class="line">|</span>
+					<span>南向</span>
+					<span class="line">|</span>
+					<span>精装修</span>
+				</dd>
+				<dd class="addr">
+					<span>燕郊 - 纳丹堡...</span>
+				</dd>
+				<dd class="size">
+					<span>来自经纪人： 广发 - 广发地产酒仙桥店 - 李佳</span>
+				</dd>
+				<dd class="bigprice">
+					<span class="num">1600</span>
+					<span>元/月</span>
+				</dd>
+			</dl>
+		</div>
+		<div class="navlistCon">
+			<dl class="listCon">
+				<dt><img src="imgs/listpic_0.jpg" alt=""></dt>
+				<dd class="listCon-title"><a href="">出门公交站通北京三季市场 纳丹堡两室一厅电梯房 拎包入住</a></dd>
+				<dd class="size">
+					<span>2室1厅1卫</span>
+					<span class="line">|</span>
+					<span>82㎡</span>
+					<span class="line">|</span>
+					<span>南向</span>
+					<span class="line">|</span>
+					<span>精装修</span>
+				</dd>
+				<dd class="addr">
+					<span>燕郊 - 纳丹堡...</span>
+				</dd>
+				<dd class="size">
+					<span>来自经纪人： 广发 - 广发地产酒仙桥店 - 李佳</span>
+				</dd>
+				<dd class="bigprice">
+					<span class="num">1600</span>
+					<span>元/月</span>
+				</dd>
+			</dl>
+		</div>
+		<div class="navlistCon">
+			<dl class="listCon">
+				<dt><img src="imgs/listpic_0.jpg" alt=""></dt>
+				<dd class="listCon-title"><a href="">出门公交站通北京三季市场 纳丹堡两室一厅电梯房 拎包入住</a></dd>
+				<dd class="size">
+					<span>2室1厅1卫</span>
+					<span class="line">|</span>
+					<span>82㎡</span>
+					<span class="line">|</span>
+					<span>南向</span>
+					<span class="line">|</span>
+					<span>精装修</span>
+				</dd>
+				<dd class="addr">
+					<span>燕郊 - 纳丹堡...</span>
+				</dd>
+				<dd class="size">
+					<span>来自经纪人： 广发 - 广发地产酒仙桥店 - 李佳</span>
+				</dd>
+				<dd class="bigprice">
+					<span class="num">1600</span>
+					<span>元/月</span>
+				</dd>
+			</dl>
+		</div>
+		<div class="navlistCon">
+			<dl class="listCon">
+				<dt><img src="imgs/listpic_0.jpg" alt=""></dt>
+				<dd class="listCon-title"><a href="">出门公交站通北京三季市场 纳丹堡两室一厅电梯房 拎包入住</a></dd>
+				<dd class="size">
+					<span>2室1厅1卫</span>
+					<span class="line">|</span>
+					<span>82㎡</span>
+					<span class="line">|</span>
+					<span>南向</span>
+					<span class="line">|</span>
+					<span>精装修</span>
+				</dd>
+				<dd class="addr">
+					<span>燕郊 - 纳丹堡...</span>
+				</dd>
+				<dd class="size">
+					<span>来自经纪人： 广发 - 广发地产酒仙桥店 - 李佳</span>
+				</dd>
+				<dd class="bigprice">
+					<span class="num">1600</span>
+					<span>元/月</span>
+				</dd>
+			</dl>
+		</div>
+	</div>
+	<div id="footer">
+	<div class="footer">
+		<ul class="listul" id="listul">
+			<li><a href="" class="check">租房</a></li>
+			<li><a href="">二手房</a></li>
+			<li><a href="">商铺</a></li>
+			<li><a href="">写字楼</a></li>
+			<li><a href="">仓库厂房</a></li>
+		</ul>
+		<div  id="xuan">
+			<ul class="xuan show">
+				<li class="xuanli xuanactive">
+					<span>热门区域 : </span>
+					<a href="">朝阳租房</a><a href="">海淀租房</a><a href="">东城租房</a><a href="">西城租房</a><a href="">丰台租房</a><a href="">通州租房</a><a href="">石景山租房</a><a href="">房山租房</a><a href="">昌平租房</a><a href="">大兴租房</a><a href="">顺义租房</a><a href="">密云租房</a><a href="">怀柔租房</a><a href="">延庆租房</a>
+				</li>
+				<li class="xuanli">
+					<span>热门价格 : </span>
+					<a href="">600元以下</a><a href="">600-1000元</a><a href="">1000-1500元</a><a href="">1500-2000元</a><a href="">2000-3000元</a><a href="">3000-5000元</a><a href="">5000-8000元</a><a href="">8000元以上</a>
+				</li>
+				<li class="xuanli">
+					<span>热门地铁 : </span>
+					<a href="">1号线</a><a href="">2号线</a><a href="">4号线</a><a href="">5号线</a><a href="">6号线</a><a href="">7号线</a><a href="">8号线</a><a href="">9号线</a><a href="">10号线</a><a href="">13号线</a><a href="">14号线(东)</a>
+				</li>
+			</ul>
+			<ul class="xuan">
+				<li class="xuanli ">
+					<span>价格筛选 : </span>
+					<a href="">200万以下</a><a href="">200-250万</a><a href="">250-300万</a><a href="">300-350万</a><a href="">350-400万</a><a href="">400-500万</a><a href="">500-700万</a><a href="">700-1000万</a>
+				</li>
+				<li class="xuanli">
+					<span>热门区域 : </span>
+					<a href="">朝阳租房</a><a href="">海淀租房</a><a href="">东城租房</a><a href="">西城租房</a><a href="">丰台租房</a><a href="">通州租房</a><a href="">石景山租房</a><a href="">房山租房</a><a href="">昌平租房</a><a href="">大兴租房</a><a href="">顺义租房</a><a href="">密云租房</a><a href="">怀柔租房</a><a href="">延庆租房</a>
+				</li>
+				<li class="xuanli">
+					<span>热门地铁 : </span>
+					<a href="">1号线</a><a href="">2号线</a><a href="">4号线</a><a href="">5号线</a><a href="">6号线</a><a href="">7号线</a><a href="">8号线</a><a href="">9号线</a><a href="">10号线</a><a href="">13号线</a><a href="">14号线(东)</a>
+				</li>
+			</ul>
+			<ul class="xuan">
+				<li class="xuanli ">
+					<span>热门区域 : </span>
+					<a href="">朝阳商铺</a><a href="">海淀商铺</a><a href="">东城商铺</a><a href="">西城商铺</a><a href="">丰台商铺</a><a href="">通州商铺</a><a href="">石景山商铺</a><a href="">房山商铺</a><a href="">昌平商铺</a><a href="">大兴商铺</a><a href="">顺义商铺</a><a href="">密云商铺</a><a href="">怀柔商铺</a><a href="">延庆商铺</a>
+				</li>
+				<li class="xuanli">
+					<span>类型 : </span>
+					<a href="">商业街商铺</a><a href="">写字楼配套</a><a href="">社区底商</a><a href="">档口摊位</a><a href="">其他</a><a href="">临街门面</a><a href="">购物百货中心</a>
+				</li>
+			</ul>
+			<ul class="xuan">
+				<li class="xuanli ">
+					<span>热门区域 : </span>
+					<a href="">朝阳写字楼</a><a href="">海淀写字楼</a><a href="">东城写字楼</a><a href="">西城写字楼</a><a href="">丰台写字楼</a><a href="">通州写字楼</a><a href="">石景山写字楼</a><a href="">房山写字楼</a><a href="">昌平写字楼</a><a href="">大兴写字楼</a><a href="">顺义写字楼</a><a href="">密云写字楼</a><a href="">怀柔写字楼</a><a href="">延庆写字楼</a>
+				</li>
+				<li class="xuanli">
+					<span>热门类型 : </span>
+					<a href="">纯写字楼</a><a href="">商业综合体</a><a href="">商务公寓</a><a href="">商务酒店</a>
+				</li>
+			</ul>
+			<ul class="xuan">
+				<li class="xuanli ">
+					<span>热门区域 : </span>
+					<a href="">朝阳仓库厂房</a><a href="">海淀仓库厂房</a><a href="">东城仓库厂房</a><a href="">西城仓库厂房</a><a href="">丰台仓库厂房</a><a href="">通州仓库厂房</a><a href="">昌平仓库厂房</a><a href="">大兴仓库厂房</a><a href="">顺义仓库厂房</a><a href="">密云仓库厂房</a><a href="">怀柔仓库厂房</a><a href="">延庆仓库厂房</a>
+				</li>
+				<li class="xuanli">
+					<span>热门类型 : </span>
+					<a href="">厂房</a><a href="">车位</a><a href="">土地</a><a href="">仓库</a>
+				</li>
+			</ul>
+		</div>
+		<ul class="wei">
+			<li>
+				<a href="">关于Ganji</a>-
+				<a href="">赶集推广</a>-
+				<a href="">渠道合作</a>-
+				<a href="">帮助中心</a>-
+				<a href="">手机号被冒用</a>-
+				<a href="">友情链接</a>-
+				<a href="">招贤纳士</a>-
+				<a href="">区县导航</a>-
+				<a href="">手机赶集</a>-
+				<a href="">租房极速版</a>-
+				<a href="">租房触屏版</a>
+			</li>
+		</ul>
+	</div>
+	</div>
+	<div class="fanhui">
+		<div class="fanhuibox">
+			<a href="" class="fhdb"><img src="imgs/fanhui_0.jpg" alt="">
+				<span>返回顶端</span>
+			</a>
+			<a href="" class="yjfk"><img src="imgs/fanhui_1.jpg" alt="">
+			<span>意见反馈</span></a>
+		</div>
+	</div>
+	<script>
+		var shouji=document.getElementById("shouji");
+		var ganji=document.getElementById("ganji");
+		shouji.onmouseover=function(){
+			ganji.style.display="block";
+		}
+		shouji.onmouseout=function(){
+			ganji.style.display="none";
+		}
+	</script>
+</body>
+</html>

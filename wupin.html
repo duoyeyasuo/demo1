@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>二手市场</title>
+	<link rel="stylesheet" href="css/wupin.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/list.js"></script>
+	<script src="js/tab.js"></script>
+	<script src="js/chelun.js"></script>
+</head>
+<body>
+	<div id="header">
+		<div class="headerCon">
+			<div class="city">
+				<a href="" class="dangqian">北京</a>
+				<a href="">[切换城市]</a>
+			</div>
+			<ul id="header-list">
+				<li><a href="">招聘</a></li>
+				<li><a href="">租房</a></li>
+				<li><a href="">二手房</a></li>
+				<li><a href="">车俩</a></li>
+				<li><a href="">二手</a></li>
+				<li  id="duo"><a href="">更多</a><div id="tou"></div></li>
+				<ul id="gengduo">
+					<li>
+						<em><a href="">房产</a></em>
+						<a href="">租房</a>
+						<a href="">二手房</a>
+						<a href="">商铺</a>
+						<a href="">写字楼</a>
+					</li>
+					<li>
+						<em><a href="">招聘</a></em>
+						<a href="">全职</a>
+						<a href="">兼职</a>
+						<a href="">简历库</a>
+					</li>
+					<li>
+						<em><a href="">车辆</a></em>
+						<a href="">二手车</a>
+						<a href="">摩托车</a>
+						<a href="">自行车</a>
+						<a href="">拼车</a>
+					</li>
+					<li>
+						<em><a href="">二手</a></em>
+						<a href="">手机</a>
+						<a href="">笔记本</a>
+						<a href="">家具</a>
+						<a href="">家电</a>
+					</li>
+					<li>
+						<em><a href="">宠物</a></em>
+						<a href="">泰迪熊</a>
+						<a href="">金毛犬</a>
+						<a href="">藏獒</a>
+						<a href="">哈士奇</a>
+					</li>
+					<li>
+						<em><a href="">服务</a></em>
+						<a href="">搬家</a>
+						<a href="">保姆</a>
+						<a href="">租车</a>
+						<a href="">身边服务</a>
+					</li>
+					<li>
+						<em><a href="">教育</a></em>
+						<a href="">职业培训</a>
+						<a href="">外语培训</a>
+						<a href="">学历培训</a>
+						<a href="">家教</a>
+					</li>
+				</ul>
+			</ul>
+			<div class="headerConR">
+				<div class="phonegan">
+					<img src="imgs/littlepho.jpg" alt="">
+					<span id="shouji">手机赶集
+						<img src="imgs/ganji.png" alt="" id="ganji"></span>
+				</div>
+				<a href="" class="ganjidd" id="ding">赶集叮咚<img src="imgs/dingdong.png" alt="" id="dong">
+				</a>
+				<a href="" class="woyaotg" id="woyaotg"><div class="jiantou" id="jiantou"></div>我要推广</a>
+				<ul id="tui">
+					<li><a href="">招聘推广</a></li>
+					<li><a href="">房产推广</a></li>
+					<li><a href="">本地服务</a></li>
+					<li><a href="">车辆推广</a></li>
+					<li><a href="">二手推广</a></li>
+					<li><a href="">宠物推广</a></li>
+				</ul>
+				<div class="zhudeng">
+					<a href="">免费注册</a>
+					<a href="">会员登录</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="head-cont">
+		<div class="head-cont">
+			<a href="index.html"><img src="imgs/helogo.jpg" alt=""></a>
+			<img src="imgs/zhuanzhuan.png" alt="" id="zhuanzhuan">
+			<div class="sear">
+			<form action="">
+				<div id="search">
+					<input type="text" placeholder="想找什么？输入关键字试试" id="search-text" >
+						<div class="select">
+				<p>跳蚤市场</p>
+				<ul class="chuzu">
+					<li class="suoyou"><a href="">所有分类</a></li>
+				</ul>
+				<i><img src="imgs/xla.jpg" alt=""></i></div>
+					<input type="submit" id="sub" value="搜索">
+				</div>
+
+			</form></div>
+			
+			<div class="fabu"><img src="imgs/fabu.jpg" alt="">免费发布信息</div>			
+		</div>	
+	</div>
+	<div class="yinhead-cont">
+		<div class="head-cont">
+			<img src="imgs/helogo.jpg" alt="">
+			<img src="imgs/zhuanzhuan.png" alt="" id="zhuanzhuan">
+			<div class="sear">
+			<form action="">
+				<div id="search">
+					<input type="text" placeholder="想找什么？输入关键字试试" id="search-text" >
+						<div class="select">
+				<p>跳蚤市场</p>
+				<ul class="chuzu">
+					<li class="suoyou"><a href="">所有分类</a></li>
+				</ul>
+				<i><img src="imgs/xla.jpg" alt=""></i></div>
+					<input type="submit" id="sub" value="搜索">
+				</div>
+
+			</form></div>
+			
+			<div class="fabu"><img src="imgs/fabu.jpg" alt="">免费发布信息</div>	
+		</div>
+		</div>	
+	</div>
+	<div id="nav">
+		<div class="nav">
+			<div class="tiao">
+				<a href="index.html">北京赶集网</a>><h1>北京二手</h1>
+			<span class="tuiguang">推广电话：400-890-5800</span>
+			</div>
+			<div class="main">
+				<div id="main-left">
+					<div class="main-left">
+						<div class="left-nav">
+							<h3>快速导航</h3>
+							<div class="left-nav-list">
+									<script>
+										var str="";
+										for(var i in arr["ershou"]){
+											str+="<div class=\"item\">";
+											str+="<div class=\"big-tit act\">	<img src=\"imgs/youjian.jpg\" alt=\"\" class=\"youjian\">";
+											str+="<p class=\"first-p\"><img src=\""+arr["ershou"][i][0]+"\" alt=\"\">";
+											str+="<a href=\"\">"+arr["ershou"][i][1]+"</a></p>";
+											str+="<p class=\"second-p\">";
+											str+="<a href=\"\">"+arr["ershou"][i][2]+"</a>";
+											str+="<a href=\"\">"+arr["ershou"][i][3]+"</a>";
+											str+="<a href=\"\">"+arr["ershou"][i][4]+"</a>";
+											str+="<a href=\"\">"+arr["ershou"][i][5]+"</a>";
+											str+="</p></div>";
+											str+="<div class=\"s-class\">";
+											str+="<dl>";
+											str+="<dt><a href=\"\">"+arr["ershou"][i][6]+"</a></dt>";
+											str+="<dd>";
+											str+="<a href=\"\">"+arr["ershou"][i][8]+"</a>";
+											str+="</dd>";
+											str+="</dl>";
+											str+="<dl>";
+											str+="<dt><a href=\"\">"+arr["ershou"][i][7]+"</a></dt>";
+											str+="<dd>";
+											str+="<a href=\"\">"+arr["ershou"][i][8]+"</a>";
+											str+="</dd>";
+											str+="</dl>";
+											str+="</div>";
+											str+="</div>";
+										}
+										document.write(str);
+									</script>
+									<div class="fenlei">
+										<a href="">查看全部分类</a>
+									</div>
+							</div>
+						</div>
+						<!-- <div class="leftLun"></div> -->
+					</div>
+					<div class="dianshang">
+						<h4><img src="imgs/tejia.png" alt="">特价新品推荐</h4>
+					<div id="box">
+					<div class="inner">
+						<div class="ul">
+							<ul class="dianshang-ul xian">
+								<li><a href=""><img src="imgs/dianshang_0.jpg" alt=""></a></li>
+								<li><a href="" class="chename">出售爱车</a></li>
+								<li><span><a href="" class="kankan">去看看 》</a></span>
+								<span class="yuan">1000元</span></li>
+							</ul>
+							<ul class="dianshang-ul">
+								<li><a href=""><img src="imgs/dianshang_1.jpg" alt=""></a></li>
+								<li><a href="" class="chename">18年京b公户力帆弯梁</a></li>
+								<li><span><a href="" class="kankan">去看看 》</a></span>
+								<span class="yuan">2700元</span></li>
+							</ul>
+							<ul class="dianshang-ul">
+								<li><a href=""><img src="imgs/dianshang_2.jpg" alt=""></a></li>
+								<li><a href="" class="chename">鬼火摩托车</a></li>
+								<li><span><a href="" class="kankan">去看看 》</a></span>
+								<span class="yuan">300元</span></li>
+							</ul>
+							<ul class="dianshang-ul">
+								<li><a href=""><img src="imgs/dianshang_3.jpg" alt=""></a></li>
+								<li><a href="" class="chename">地平线150趴赛摩托车</a></li>
+								<li><span><a href="" class="kankan">去看看 》</a></span>
+								<span class="yuan">2000元</span></li>
+							</ul>
+							<ul class="dianshang-ul">
+								<li><a href=""><img src="imgs/dianshang_4.jpg" alt=""></a></li>
+								<li><a href="" class="chename">拆车本田优悦110电喷</a></li>
+								<li><span><a href="" class="kankan">去看看 》</a></span>
+								<span class="yuan">1200元</span></li>
+							</ul>
+							<ul class="dianshang-ul">
+								<li><a href=""><img src="imgs/dianshang_5.jpg" alt=""></a></li>
+								<li><a href="" class="chename">摩托车</a></li>
+								<li><span><a href="" class="kankan">去看看 》</a></span>
+								<span class="yuan">2300元</span></li>
+							</ul>
+							<ul class="dianshang-ul">
+								<li><a href=""><img src="imgs/dianshang_6.jpg" alt=""></a></li>
+								<li><a href="" class="chename">钱江150</a></li>
+								<li><span><a href="" class="kankan">去看看 》</a></span>
+								<span class="yuan">5100元</span></li>
+							</ul>
+							<ul class="dianshang-ul">
+								<li><a href=""><img src="imgs/dianshang_7.jpg" alt=""></a></li>
+								<li><a href="" class="chename">小忍者350因家里买</a></li>
+								<li><span><a href="" class="kankan">去看看 》</a></span>
+								<span class="yuan">5600元</span></li>
+							</ul>
+						</div>
+						<ol class="bar">
+						</ol>
+						</div>
+						</div>
+					</div>
+
+
+
+
+					<div class="bangzhu">
+						<h4><img src="imgs/tejia.png" alt="">本分类帮助</h4>
+						<ul>
+							<!-- <li><a href="">橱柜十大品牌</a></li> -->
+							<script>
+							var str="";
+							for(var i in arr["bangzhu"]){
+								str+="<li><a href=\"\">"+arr["bangzhu"][i]+"</a></li>"
+							}
+							document.write(str);
+							</script>
+						</ul>
+					</div>
+				</div>
+				<div id="main-right">
+					<div class="main-nav">
+						<div class="main-nav-top">
+							<img src="imgs/shoubanner.png" alt="">
+						</div>
+						<div class="main-nav-bottom">
+							<div class="youpin">
+								<div class="youpin-title">
+									<a href="" class="chakan">查看全部</a>
+									<img src="imgs/youlogo.png" alt="" id="youlogo">
+									<div class="youpin-titleCon">
+										<span><i>180</i>质保</span><span class="fengexian"></span>
+										<span><i>51项</i>专业检测</span><span class="fengexian"></span>
+										<span>顺丰包邮</span>
+									</div>
+									
+								</div>
+								<div class="youpin-con">
+										<div id="arr">
+											<span id="left"><</span>
+											<span id="right">></span>
+										</div>
+									</div>
+							</div>
+						</div>
+					</div>
+					<div class="main-right">
+						<div class="sale">
+							<div class="shouchu">刚刚售出</div>
+							<ul class="sale-list">
+								<script>
+									var str="";
+									for(var i in arr["sale"]){
+										str+="<li><img src='"+arr["sale"][i][0]+"' alt=\"\">";
+										str+="<div class=\"detail\">";
+										str+="<div class=\"detail-name\">"+arr["sale"][i][1]+"</div>";
+										str+="<div class=\"detail-face\"><img src=\""+arr["sale"][i][2]+"\" alt=\"\"></div>";
+										str+="<div class=\"detail-facename\">"+arr["sale"][i][3]+"</div>";
+										str+="<div class=\"detail-price\">赚到:￥<span>"+arr["sale"][i][4]+"</span></div>";
+										str+="</div></li>";
+									}
+									document.write(str);
+									</script>
+								<!-- <li>
+									<img src="imgs/sale_0.jpg" alt="">
+									<div class="detail">
+
+										<div class="detail-name">斐讯1200M</div>
+										<div class="detail-face"><img src="imgs/face_0.jpg" alt=""></div>
+										<div class="detail-facename">东尼王</div>
+										<div class="detail-price">赚到:￥<span>100</span></div>
+									</div>
+								</li> -->
+							</ul>
+						</div>
+						<div class="zhuanzhi"><a href="">转卖闲置来赚钱</a></div>
+					</div>
+					<div class="phonebox">
+						<div class="phonebox-title">
+							<h4>手机相机游戏机</h4>
+								<ul class="phoneboxR">
+									<li><a href="">二手手机</a></li>
+									<li><a href="">相机</a></li>
+									<li><a href="">游戏机</a></li>
+								</ul>
+						</div>
+							<ul class="phonebox-pic">
+								<li>
+									<a href=""><img src="imgs/phone_0.jpg" alt=""></a>
+									<span>3280元</span>
+								</li>
+								<li>
+									<a href=""><img src="imgs/phone_0.jpg" alt=""></a>
+									<span>3280元</span>
+								</li>
+								<li>
+									<a href=""><img src="imgs/phone_0.jpg" alt=""></a>
+									<span>3280元</span>
+								</li>
+								<li>
+									<a href=""><img src="imgs/phone_0.jpg" alt=""></a>
+									<span>3280元</span>
+								</li>
+								<li>
+									<a href=""><img src="imgs/phone_0.jpg" alt=""></a>
+									<span>3280元</span>
+								</li>
+							</ul>
+							<p class="phonebox-news">
+								<span>面议</span>
+								<a href="">吃鸡神器 便宜出了</a>
+							</p>
+							<p class="phonebox-news">
+								<span>面议</span>
+								<a href="">吃鸡神器 便宜出了</a>
+							</p>
+							<p class="phonebox-news">
+								<span>面议</span>
+								<a href="">吃鸡神器 便宜出了</a>
+							</p>
+							<p class="phonebox-news">
+								<span>面议</span>
+								<a href="">吃鸡神器 便宜出了</a>
+							</p>
+							<p class="phonebox-news">
+								<span>面议</span>
+								<a href="">吃鸡神器 便宜出了</a>
+							</p>
+					</div> 
+					<div class="phonebox">
+						<div class="phonebox-title">
+							<h4>手机相机游戏机</h4>
+								<ul class="phoneboxR">
+									<li><a href="">二手手机</a></li>
+									<li><a href="">相机</a></li>
+									<li><a href="">游戏机</a></li>
+								</ul>
+						</div>
+							<ul class="phonebox-pic">
+								<li>
+									<a href=""><img src="imgs/phone_0.jpg" alt=""></a>
+									<span>3280元</span>
+								</li>
+								<li>
+									<a href=""><img src="imgs/phone_0.jpg" alt=""></a>
+									<span>3280元</span>
+								</li>
+								<li>
+									<a href=""><img src="imgs/phone_0.jpg" alt=""></a>
+									<span>3280元</span>
+								</li>
+								<li>
+									<a href=""><img src="imgs/phone_0.jpg" alt=""></a>
+									<span>3280元</span>
+								</li>
+								<li>
+									<a href=""><img src="imgs/phone_0.jpg" alt=""></a>
+									<span>3280元</span>
+								</li>
+							</ul>
+							<p class="phonebox-news">
+								<span>面议</span>
+								<a href="">吃鸡神器 便宜出了</a>
+							</p>
+							<p class="phonebox-news">
+								<span>面议</span>
+								<a href="">吃鸡神器 便宜出了</a>
+							</p>
+							<p class="phonebox-news">
+								<span>面议</span>
+								<a href="">吃鸡神器 便宜出了</a>
+							</p>
+							<p class="phonebox-news">
+								<span>面议</span>
+								<a href="">吃鸡神器 便宜出了</a>
+							</p>
+							<p class="phonebox-news">
+								<span>面议</span>
+								<a href="">吃鸡神器 便宜出了</a>
+							</p>
+					</div> 
+					<div class="phonebox">
+						<div class="phonebox-title">
+							<h4>手机相机游戏机</h4>
+								<ul class="phoneboxR">
+									<li><a href="">二手手机</a></li>
+									<li><a href="">相机</a></li>
+									<li><a href="">游戏机</a></li>
+								</ul>
+						</div>
+							<ul class="phonebox-pic">
+								<li>
+									<a href=""><img src="imgs/phone_0.jpg" alt=""></a>
+									<span>3280元</span>
+								</li>
+								<li>
+									<a href=""><img src="imgs/phone_0.jpg" alt=""></a>
+									<span>3280元</span>
+								</li>
+								<li>
+									<a href=""><img src="imgs/phone_0.jpg" alt=""></a>
+									<span>3280元</span>
+								</li>
+								<li>
+									<a href=""><img src="imgs/phone_0.jpg" alt=""></a>
+									<span>3280元</span>
+								</li>
+								<li>
+									<a href=""><img src="imgs/phone_0.jpg" alt=""></a>
+									<span>3280元</span>
+								</li>
+							</ul>
+							<p class="phonebox-news">
+								<span>面议</span>
+								<a href="">吃鸡神器 便宜出了</a>
+							</p>
+							<p class="phonebox-news">
+								<span>面议</span>
+								<a href="">吃鸡神器 便宜出了</a>
+							</p>
+							<p class="phonebox-news">
+								<span>面议</span>
+								<a href="">吃鸡神器 便宜出了</a>
+							</p>
+							<p class="phonebox-news">
+								<span>面议</span>
+								<a href="">吃鸡神器 便宜出了</a>
+							</p>
+							<p class="phonebox-news">
+								<span>面议</span>
+								<a href="">吃鸡神器 便宜出了</a>
+							</p>
+					</div> 
+					<div class="phonebox">
+						<div class="phonebox-title">
+							<h4>手机相机游戏机</h4>
+								<ul class="phoneboxR">
+									<li><a href="">二手手机</a></li>
+									<li><a href="">相机</a></li>
+									<li><a href="">游戏机</a></li>
+								</ul>
+						</div>
+							<ul class="phonebox-pic">
+								<li>
+									<a href=""><img src="imgs/phone_0.jpg" alt=""></a>
+									<span>3280元</span>
+								</li>
+								<li>
+									<a href=""><img src="imgs/phone_0.jpg" alt=""></a>
+									<span>3280元</span>
+								</li>
+								<li>
+									<a href=""><img src="imgs/phone_0.jpg" alt=""></a>
+									<span>3280元</span>
+								</li>
+								<li>
+									<a href=""><img src="imgs/phone_0.jpg" alt=""></a>
+									<span>3280元</span>
+								</li>
+								<li>
+									<a href=""><img src="imgs/phone_0.jpg" alt=""></a>
+									<span>3280元</span>
+								</li>
+							</ul>
+							<p class="phonebox-news">
+								<span>面议</span>
+								<a href="">吃鸡神器 便宜出了</a>
+							</p>
+							<p class="phonebox-news">
+								<span>面议</span>
+								<a href="">吃鸡神器 便宜出了</a>
+							</p>
+							<p class="phonebox-news">
+								<span>面议</span>
+								<a href="">吃鸡神器 便宜出了</a>
+							</p>
+							<p class="phonebox-news">
+								<span>面议</span>
+								<a href="">吃鸡神器 便宜出了</a>
+							</p>
+							<p class="phonebox-news">
+								<span>面议</span>
+								<a href="">吃鸡神器 便宜出了</a>
+							</p>
+					</div> 
+					<div class="phonebox">
+						<div class="phonebox-title">
+							<h4>手机相机游戏机</h4>
+								<ul class="phoneboxR">
+									<li><a href="">二手手机</a></li>
+									<li><a href="">相机</a></li>
+									<li><a href="">游戏机</a></li>
+								</ul>
+						</div>
+							<ul class="phonebox-pic">
+								<li>
+									<a href=""><img src="imgs/phone_0.jpg" alt=""></a>
+									<span>3280元</span>
+								</li>
+								<li>
+									<a href=""><img src="imgs/phone_0.jpg" alt=""></a>
+									<span>3280元</span>
+								</li>
+								<li>
+									<a href=""><img src="imgs/phone_0.jpg" alt=""></a>
+									<span>3280元</span>
+								</li>
+								<li>
+									<a href=""><img src="imgs/phone_0.jpg" alt=""></a>
+									<span>3280元</span>
+								</li>
+								<li>
+									<a href=""><img src="imgs/phone_0.jpg" alt=""></a>
+									<span>3280元</span>
+								</li>
+							</ul>
+							<p class="phonebox-news">
+								<span>面议</span>
+								<a href="">吃鸡神器 便宜出了</a>
+							</p>
+							<p class="phonebox-news">
+								<span>面议</span>
+								<a href="">吃鸡神器 便宜出了</a>
+							</p>
+							<p class="phonebox-news">
+								<span>面议</span>
+								<a href="">吃鸡神器 便宜出了</a>
+							</p>
+							<p class="phonebox-news">
+								<span>面议</span>
+								<a href="">吃鸡神器 便宜出了</a>
+							</p>
+							<p class="phonebox-news">
+								<span>面议</span>
+								<a href="">吃鸡神器 便宜出了</a>
+							</p>
+					</div> 
+					<div class="phonebox">
+						<div class="phonebox-title">
+							<h4>手机相机游戏机</h4>
+								<ul class="phoneboxR">
+									<li><a href="">二手手机</a></li>
+									<li><a href="">相机</a></li>
+									<li><a href="">游戏机</a></li>
+								</ul>
+						</div>
+							<ul class="phonebox-pic">
+								<li>
+									<a href=""><img src="imgs/phone_0.jpg" alt=""></a>
+									<span>3280元</span>
+								</li>
+								<li>
+									<a href=""><img src="imgs/phone_0.jpg" alt=""></a>
+									<span>3280元</span>
+								</li>
+								<li>
+									<a href=""><img src="imgs/phone_0.jpg" alt=""></a>
+									<span>3280元</span>
+								</li>
+								<li>
+									<a href=""><img src="imgs/phone_0.jpg" alt=""></a>
+									<span>3280元</span>
+								</li>
+								<li>
+									<a href=""><img src="imgs/phone_0.jpg" alt=""></a>
+									<span>3280元</span>
+								</li>
+							</ul>
+							<p class="phonebox-news">
+								<span>面议</span>
+								<a href="">吃鸡神器 便宜出了</a>
+							</p>
+							<p class="phonebox-news">
+								<span>面议</span>
+								<a href="">吃鸡神器 便宜出了</a>
+							</p>
+							<p class="phonebox-news">
+								<span>面议</span>
+								<a href="">吃鸡神器 便宜出了</a>
+							</p>
+							<p class="phonebox-news">
+								<span>面议</span>
+								<a href="">吃鸡神器 便宜出了</a>
+							</p>
+							<p class="phonebox-news">
+								<span>面议</span>
+								<a href="">吃鸡神器 便宜出了</a>
+							</p>
+					</div> 
+				</div>
+			</div>
+			<div class="nav-footer"><span>所有类目</span></div>
+			<div class="nav-footerCon">
+				<div class="heng">
+					<div class="sider">
+						<dl class="fen">
+							<dt><a href="">二手家具</a><a href="">家居百货</a></dt>
+							<dd>
+								<a href="">床</a>
+								<a href="">柜子</a>
+								<a href="">桌椅</a>
+								<a href="">沙发</a>
+								<a href="">自行车</a>
+								<a href="">电动车</a>
+								<a href="">摩托车</a>
+							</dd>
+						</dl>
+					</div>
+					<div class="sider">
+						<dl class="fen">
+							<dt><a href="">二手家具</a><a href="">家居百货</a></dt>
+							<dd>
+								<a href="">床</a>
+								<a href="">柜子</a>
+								<a href="">桌椅</a>
+								<a href="">沙发</a>
+								<a href="">自行车</a>
+								<a href="">电动车</a>
+								<a href="">摩托车</a>
+							</dd>
+						</dl>
+					</div>
+					<div class="sider litwidth">
+						<dl class="fen">
+							<dt><a href="">设备/办公用品 </a><a href="">农用品 </a></dt>
+							<dd>
+								<a href="">床</a>
+								<a href="">柜子</a>
+								<a href="">桌椅</a>
+								<a href="">沙发</a>
+								<a href="">自行车</a>
+								<a href="">电动车</a>
+								<a href="">摩托车</a>
+							</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="heng">
+					<div class="sider">
+						<dl class="fen">
+							<dt><a href="">二手家具</a><a href="">家居百货</a></dt>
+							<dd>
+								<a href="">床</a>
+								<a href="">柜子</a>
+								<a href="">桌椅</a>
+								<a href="">沙发</a>
+								<a href="">自行车</a>
+								<a href="">电动车</a>
+								<a href="">摩托车</a>
+							</dd>
+						</dl>
+					</div>
+					<div class="sider">
+						<dl class="fen">
+							<dt><a href="">二手家具</a><a href="">家居百货</a></dt>
+							<dd>
+								<a href="">床</a>
+								<a href="">柜子</a>
+								<a href="">桌椅</a>
+								<a href="">沙发</a>
+								<a href="">自行车</a>
+								<a href="">电动车</a>
+								<a href="">摩托车</a>
+							</dd>
+						</dl>
+					</div>
+					<div class="sider litwidth">
+						<dl class="fen">
+							<dt><a href="">设备/办公用品 </a><a href="">农用品 </a></dt>
+							<dd>
+								<a href="">床</a>
+								<a href="">柜子</a>
+								<a href="">桌椅</a>
+								<a href="">沙发</a>
+								<a href="">自行车</a>
+								<a href="">电动车</a>
+								<a href="">摩托车</a>
+							</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="heng">
+					<div class="sider">
+						<dl class="fen">
+							<dt><a href="">二手家具</a><a href="">家居百货</a></dt>
+							<dd>
+								<a href="">床</a>
+								<a href="">柜子</a>
+								<a href="">桌椅</a>
+								<a href="">沙发</a>
+								<a href="">自行车</a>
+								<a href="">电动车</a>
+								<a href="">摩托车</a>
+							</dd>
+						</dl>
+					</div>
+					<div class="sider">
+						<dl class="fen">
+							<dt><a href="">二手家具</a><a href="">家居百货</a></dt>
+							<dd>
+								<a href="">床</a>
+								<a href="">柜子</a>
+								<a href="">桌椅</a>
+								<a href="">沙发</a>
+								<a href="">自行车</a>
+								<a href="">电动车</a>
+								<a href="">摩托车</a>
+							</dd>
+						</dl>
+					</div>
+					<div class="sider litwidth">
+						<dl class="fen">
+							<dt><a href="">设备/办公用品 </a><a href="">农用品 </a></dt>
+							<dd>
+								<a href="">床</a>
+								<a href="">柜子</a>
+								<a href="">桌椅</a>
+								<a href="">沙发</a>
+								<a href="">自行车</a>
+								<a href="">电动车</a>
+								<a href="">摩托车</a>
+							</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="heng">
+					<div class="sider">
+						<dl class="fen">
+							<dt><a href="">二手家具</a><a href="">家居百货</a></dt>
+							<dd>
+								<a href="">床</a>
+								<a href="">柜子</a>
+								<a href="">桌椅</a>
+								<a href="">沙发</a>
+								<a href="">自行车</a>
+								<a href="">电动车</a>
+								<a href="">摩托车</a>
+							</dd>
+						</dl>
+					</div>
+					<div class="sider">
+						<dl class="fen">
+							<dt><a href="">二手家具</a><a href="">家居百货</a></dt>
+							<dd>
+								<a href="">床</a>
+								<a href="">柜子</a>
+								<a href="">桌椅</a>
+								<a href="">沙发</a>
+								<a href="">自行车</a>
+								<a href="">电动车</a>
+								<a href="">摩托车</a>
+							</dd>
+						</dl>
+					</div>
+					<div class="sider litwidth">
+						<dl class="fen">
+							<dt><a href="">设备/办公用品 </a><a href="">农用品 </a></dt>
+							<dd>
+								<a href="">床</a>
+								<a href="">柜子</a>
+								<a href="">桌椅</a>
+								<a href="">沙发</a>
+								<a href="">自行车</a>
+								<a href="">电动车</a>
+								<a href="">摩托车</a>
+							</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="heng">
+					<div class="sider">
+						<dl class="fen">
+							<dt><a href="">虚拟物品</a><a href="">杂七杂八 </a></dt>
+						</dl>
+					</div>
+					<div class="sider">
+						<dl class="fen">
+							<dt><a href="">免费赠送</a><a href="">物品交换</a></dt>
+						</dl>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer">
+	<div class="footer">
+		<ul class="listul" id="listul">
+			<li><a href="" class="check">租房</a></li>
+			<li><a href="">二手房</a></li>
+			<li><a href="">商铺</a></li>
+			<li><a href="">写字楼</a></li>
+			<li><a href="">仓库厂房</a></li>
+		</ul>
+		<div  id="xuan">
+			<ul class="xuan show">
+				<li class="xuanli xuanactive">
+					<span>热门区域 : </span>
+					<a href="">朝阳租房</a><a href="">海淀租房</a><a href="">东城租房</a><a href="">西城租房</a><a href="">丰台租房</a><a href="">通州租房</a><a href="">石景山租房</a><a href="">房山租房</a><a href="">昌平租房</a><a href="">大兴租房</a><a href="">顺义租房</a><a href="">密云租房</a><a href="">怀柔租房</a><a href="">延庆租房</a>
+				</li>
+				<li class="xuanli">
+					<span>热门价格 : </span>
+					<a href="">600元以下</a><a href="">600-1000元</a><a href="">1000-1500元</a><a href="">1500-2000元</a><a href="">2000-3000元</a><a href="">3000-5000元</a><a href="">5000-8000元</a><a href="">8000元以上</a>
+				</li>
+				<li class="xuanli">
+					<span>热门地铁 : </span>
+					<a href="">1号线</a><a href="">2号线</a><a href="">4号线</a><a href="">5号线</a><a href="">6号线</a><a href="">7号线</a><a href="">8号线</a><a href="">9号线</a><a href="">10号线</a><a href="">13号线</a><a href="">14号线(东)</a>
+				</li>
+			</ul>
+			<ul class="xuan">
+				<li class="xuanli ">
+					<span>价格筛选 : </span>
+					<a href="">200万以下</a><a href="">200-250万</a><a href="">250-300万</a><a href="">300-350万</a><a href="">350-400万</a><a href="">400-500万</a><a href="">500-700万</a><a href="">700-1000万</a>
+				</li>
+				<li class="xuanli">
+					<span>热门区域 : </span>
+					<a href="">朝阳租房</a><a href="">海淀租房</a><a href="">东城租房</a><a href="">西城租房</a><a href="">丰台租房</a><a href="">通州租房</a><a href="">石景山租房</a><a href="">房山租房</a><a href="">昌平租房</a><a href="">大兴租房</a><a href="">顺义租房</a><a href="">密云租房</a><a href="">怀柔租房</a><a href="">延庆租房</a>
+				</li>
+				<li class="xuanli">
+					<span>热门地铁 : </span>
+					<a href="">1号线</a><a href="">2号线</a><a href="">4号线</a><a href="">5号线</a><a href="">6号线</a><a href="">7号线</a><a href="">8号线</a><a href="">9号线</a><a href="">10号线</a><a href="">13号线</a><a href="">14号线(东)</a>
+				</li>
+			</ul>
+			<ul class="xuan">
+				<li class="xuanli ">
+					<span>热门区域 : </span>
+					<a href="">朝阳商铺</a><a href="">海淀商铺</a><a href="">东城商铺</a><a href="">西城商铺</a><a href="">丰台商铺</a><a href="">通州商铺</a><a href="">石景山商铺</a><a href="">房山商铺</a><a href="">昌平商铺</a><a href="">大兴商铺</a><a href="">顺义商铺</a><a href="">密云商铺</a><a href="">怀柔商铺</a><a href="">延庆商铺</a>
+				</li>
+				<li class="xuanli">
+					<span>类型 : </span>
+					<a href="">商业街商铺</a><a href="">写字楼配套</a><a href="">社区底商</a><a href="">档口摊位</a><a href="">其他</a><a href="">临街门面</a><a href="">购物百货中心</a>
+				</li>
+			</ul>
+			<ul class="xuan">
+				<li class="xuanli ">
+					<span>热门区域 : </span>
+					<a href="">朝阳写字楼</a><a href="">海淀写字楼</a><a href="">东城写字楼</a><a href="">西城写字楼</a><a href="">丰台写字楼</a><a href="">通州写字楼</a><a href="">石景山写字楼</a><a href="">房山写字楼</a><a href="">昌平写字楼</a><a href="">大兴写字楼</a><a href="">顺义写字楼</a><a href="">密云写字楼</a><a href="">怀柔写字楼</a><a href="">延庆写字楼</a>
+				</li>
+				<li class="xuanli">
+					<span>热门类型 : </span>
+					<a href="">纯写字楼</a><a href="">商业综合体</a><a href="">商务公寓</a><a href="">商务酒店</a>
+				</li>
+			</ul>
+			<ul class="xuan">
+				<li class="xuanli ">
+					<span>热门区域 : </span>
+					<a href="">朝阳仓库厂房</a><a href="">海淀仓库厂房</a><a href="">东城仓库厂房</a><a href="">西城仓库厂房</a><a href="">丰台仓库厂房</a><a href="">通州仓库厂房</a><a href="">昌平仓库厂房</a><a href="">大兴仓库厂房</a><a href="">顺义仓库厂房</a><a href="">密云仓库厂房</a><a href="">怀柔仓库厂房</a><a href="">延庆仓库厂房</a>
+				</li>
+				<li class="xuanli">
+					<span>热门类型 : </span>
+					<a href="">厂房</a><a href="">车位</a><a href="">土地</a><a href="">仓库</a>
+				</li>
+			</ul>
+		</div>
+		<ul class="wei">
+			<li>
+				<a href="">关于Ganji</a>-
+				<a href="">赶集推广</a>-
+				<a href="">渠道合作</a>-
+				<a href="">帮助中心</a>-
+				<a href="">手机号被冒用</a>-
+				<a href="">友情链接</a>-
+				<a href="">招贤纳士</a>-
+				<a href="">区县导航</a>-
+				<a href="">手机赶集</a>-
+				<a href="">租房极速版</a>-
+				<a href="">租房触屏版</a>
+			</li>
+		</ul>
+	</div>
+	</div>
+	<div class="fanhui">
+		<div class="fanhuibox">
+			<a href="" class="fhdb"><img src="imgs/fanhui_0.jpg" alt="">
+				<span>返回顶端</span>
+			</a>
+			<a href="" class="yjfk"><img src="imgs/fanhui_1.jpg" alt="">
+			<span>意见反馈</span></a>
+		</div>
+	</div>
+	<script>
+		$(document).ready(function(){
+			$(window).scroll(function(){
+				if($(window).scrollTop()>$("#header").height()+$("#head-cont").height()){
+					$(".yinhead-cont").show();
+				}else{
+					$(".yinhead-cont").hide();
+				}
+			})
+		})
+	</script>
+	
+	<script>
+		var shouji=document.getElementById("shouji");
+		var ding=document.getElementById("ding");
+		var ganji=document.getElementById("ganji");
+		var dong=document.getElementById("dong");
+		shouji.onmouseover=function(){
+			ganji.style.display="block";
+		}
+		shouji.onmouseout=function(){
+			ganji.style.display="none";
+		}
+		ding.onmouseover=function(){
+			dong.style.display="block";
+		}
+		ding.onmouseout=function(){
+			dong.style.display="none";
+		}
+	</script>
+</body>
+</html>

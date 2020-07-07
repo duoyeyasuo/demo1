@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>二手车</title>
+	<link rel="stylesheet" href="css/car.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/list.js"></script>
+	<script src="js/tab.js"></script>
+</head>
+<body>
+	<div id="header">
+		<div class="headerCon">
+			<div class="city">
+				<a href="" class="dangqian">北京</a>
+				<a href="">[切换城市]</a>
+			</div>
+			<ul id="header-list">
+				<li><a href="">招聘</a></li>
+				<li><a href="">租房</a></li>
+				<li><a href="">二手房</a></li>
+				<li><a href="">车俩</a></li>
+				<li><a href="">二手</a></li>
+				<li  id="duo"><a href="">更多</a><div id="tou"></div></li>
+				<ul id="gengduo">
+					<li>
+						<em><a href="">房产</a></em>
+						<a href="">租房</a>
+						<a href="">二手房</a>
+						<a href="">商铺</a>
+						<a href="">写字楼</a>
+					</li>
+					<li>
+						<em><a href="">招聘</a></em>
+						<a href="">全职</a>
+						<a href="">兼职</a>
+						<a href="">简历库</a>
+					</li>
+					<li>
+						<em><a href="">车辆</a></em>
+						<a href="">二手车</a>
+						<a href="">摩托车</a>
+						<a href="">自行车</a>
+						<a href="">拼车</a>
+					</li>
+					<li>
+						<em><a href="">二手</a></em>
+						<a href="">手机</a>
+						<a href="">笔记本</a>
+						<a href="">家具</a>
+						<a href="">家电</a>
+					</li>
+					<li>
+						<em><a href="">宠物</a></em>
+						<a href="">泰迪熊</a>
+						<a href="">金毛犬</a>
+						<a href="">藏獒</a>
+						<a href="">哈士奇</a>
+					</li>
+					<li>
+						<em><a href="">服务</a></em>
+						<a href="">搬家</a>
+						<a href="">保姆</a>
+						<a href="">租车</a>
+						<a href="">身边服务</a>
+					</li>
+					<li>
+						<em><a href="">教育</a></em>
+						<a href="">职业培训</a>
+						<a href="">外语培训</a>
+						<a href="">学历培训</a>
+						<a href="">家教</a>
+					</li>
+				</ul>
+			</ul>
+			<div class="headerConR">
+				<div class="phonegan">
+					<img src="imgs/littlepho.jpg" alt="">
+					<span id="shouji">手机赶集
+						<img src="imgs/ganji.png" alt="" id="ganji"></span>
+				</div>
+				<a href="" class="ganjidd" id="ding">赶集叮咚<img src="imgs/dingdong.png" alt="" id="dong">
+				</a>
+				<a href="" class="woyaotg" id="woyaotg"><div class="jiantou" id="jiantou"></div>我要推广</a>
+				<ul id="tui">
+					<li><a href="">招聘推广</a></li>
+					<li><a href="">房产推广</a></li>
+					<li><a href="">本地服务</a></li>
+					<li><a href="">车辆推广</a></li>
+					<li><a href="">二手推广</a></li>
+					<li><a href="">宠物推广</a></li>
+				</ul>
+				<div class="zhudeng">
+					<a href="">免费注册</a>
+					<a href="">会员登录</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="head-cont">
+		<div class="head-cont">
+			<a href="index.html"><img src="imgs/helogo.jpg" alt=""></a>
+			<div class="sear">
+			<form action="">
+				<div id="search">
+					<input type="text" placeholder="想找什么？输入关键字试试" id="search-text">
+						<div class="select">
+				<p>车辆买卖</p>
+				<ul class="chuzu">
+					<li><a href="">所有分类</a></li>
+				</ul>
+				<i><img src="imgs/xla.jpg" alt=""></i></div>
+					<input type="submit" id="sub" value="搜索">
+				</div>
+
+			</form></div><div class="xiugai">修改/删除信息</div>
+			<div class="fabu">免费发布信息</div>
+			
+		</div>	
+	</div>
+	<div class="yinhead-cont">
+		<div class="head-cont">
+			<img src="imgs/helogo.jpg" alt="">
+			<div class="sear">
+			<form action="">
+				<div id="search">
+					<input type="text" placeholder="想找什么？输入关键字试试" id="search-text">
+						<div class="select">
+				<p>车辆买卖</p>
+				<ul class="chuzu">
+					<li><a href="">所有分类</a></li>
+				</ul>
+				<i><img src="imgs/xla.jpg" alt=""></i></div>
+					<input type="submit" id="sub" value="搜索">
+				</div>
+
+			</form></div><div class="xiugai">修改/删除信息</div>
+			<div class="fabu">免费发布信息</div>
+			
+		</div>
+		</div>	
+	</div>
+	<div id="nav">
+		<div class="nav">
+			<div class="sub-nav">
+				<ul class="sub-list">
+					<li class="active"><a href="">买二手车</a></li>
+					<li><a href="">买二手车</a></li>
+					<li><a href="">评估车价</a></li>
+					<li><a href="">汽车资讯</a></li>
+				</ul>
+			</div>
+			<div class="sub-title">
+				<span class="news">赶集网为您找到<strong>246197条</strong>二手车信息    |  <a href="" class="quanguo">全国二手车</a></span>
+				<a href="index.html">北京赶集</a>&nbsp;&nbsp;>
+				<a href="">北京二手车网</a>&nbsp;&nbsp;>
+				<a href="">北京二手车</a>
+			</div>
+			<div class="line">
+			<div class="shaixuan">
+				<a href="">便捷售车</a>
+				<div class="zhao">
+					<input type="text" placeholder="输入品牌车系试试">
+					<img src="imgs/sou.jpg" alt="">
+				</div>
+			</div>
+			<div class="sel">
+				<dl class="selbox fir">
+					<dt>价格:</dt>
+					<dd class="selprice">
+						<a href="" class="first">不限</a>
+						<script>
+						var str="";
+						for(var i in arr["price"]){
+							str+="<a href=\"\">"+arr["price"][i]+"</a>";
+						}
+						document.write(str);
+						</script>
+						<input type="text" class="input"><span>-</span><input type="text" class="input"><span>万</span><input type="submit" class="subm" value="筛选"> 
+					</dd>
+				</dl>
+				<dl class="selbox fir">
+					<dt>级别:</dt>
+					<dd class="selprice">
+						<a href="" class="first">不限</a>
+						<script>
+						var str="";
+						for(var i in arr["jibie"]){
+							str+="<a href=\"\">"+arr["jibie"][i]+"</a>";
+						}
+						document.write(str);
+						</script> 
+					</dd>
+				</dl>
+				<dl class="selbox fir">
+					<dt>品牌:</dt>
+					<dd class="selprice">
+						<a href="" class="first">不限</a>
+						<script>
+						var str="";
+						for(var i in arr["pinpai"]){
+							str+="<a href=\"\">"+arr["pinpai"][i]+"</a>";
+						}
+						document.write(str);
+						</script> 
+					</dd>
+				</dl>
+				<dl class="selbox fir">
+					<dt>车系:</dt>
+					<dd class="selprice">
+						<a href="" class="first">不限</a>
+						<script>
+						var str="";
+						for(var i in arr["chexi"]){
+							str+="<a href=\"\">"+arr["chexi"][i]+"</a>";
+						}
+						document.write(str);
+						</script> 
+					</dd>
+				</dl>
+				<dl class="selbox fir">
+					<dt>车龄:</dt>
+					<dd class="selprice">
+						<a href="" class="first">不限</a>
+						<script>
+						var str="";
+						for(var i in arr["cheling"]){
+							str+="<a href=\"\">"+arr["cheling"][i]+"</a>";
+						}
+						document.write(str);
+						</script> 
+					</dd>
+				</dl>
+				<div class="remen">
+					<a href="" class="remenword"> 外迁 / 车管所查询</a>
+                	热门专区：
+					<a href="">豪华车</a><a href="">准新车</a><a href="">练手车</a>
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="kong">
+			<a href="">&nbsp;</a>
+		</div>
+		<div class="leftBox">
+			<div class="topBox">
+				<div class="topBoxT">
+					<a href="" class="fr">车检延保</a>
+					<a href="" class="fr tw">事故车查询</a>
+					<a href="" class="fr ">车俩估价</a>
+					<ul class="topBoxTo">
+						<li class="activeli"><a href="">北京二手车</a></li>
+						<li><a href="">个人</a></li>
+						<li><a href="">商家</a></li>
+						<li><a href="">下线车</a></li>
+						<li><a href="">放心车</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="border">
+			<div class="borderCon">
+				<ul class="paixu">
+					<li ><a href="" class="moren">默认排序</a></li>
+					<li><a href="">价格</a></li>
+					<li><a href="">车龄</a></li>
+				</ul>
+				<ul class="sele">
+					<li><a href="">车辆转让</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="chelist">
+			<dl class="chelist">
+				<a href="">奔驰 R级 2006款 R 350 4MATIC-升级版</a>
+            	<img src="imgs/hot.jpg" id="hot" alt="">
+            	<div class="chelist-nav">
+	            	<div class="chelist-navL">
+	            		<ul>
+	            			<li>
+	            				<p class="chelist-text">
+	            					<span><b>13</b>年车龄</span>
+	            					<span><b>9</b>万公里</span>
+	            				</p>
+	            				<p class="name">[商家] | 北京市明健旧机动车经纪有限公司</p>
+	            				<div class="chelist-pic">
+	            					<a href=""><img src="imgs/chezu_0.jpg" alt=""></a>
+	            					<a href=""><img src="imgs/chezu_1.jpg" alt=""></a>
+	            					<a href=""><img src="imgs/chezu_2.jpg" alt=""></a>
+	            					<a href=""><img src="imgs/chezu_3.jpg" alt=""></a>
+	            				</div>
+	            			</li>
+	            		</ul>
+	            	</div>
+	            	<div class="chelist-navR">
+	            		<span>12</span>万
+	            	</div>
+           		</div>
+			</dl>
+			<dl class="new-chelist">
+				<dt><a href=""><img src="imgs/che_1.jpg" alt=""></a></dt>
+				<div class="info">
+					<div class="info-title">
+						<a href="">路虎 发现 2014款 3.0 V6 SC HSE Luxury-更多车源请进店查看</a>
+					</div>
+					<p class="chelist-text">
+	            					<span><b>5</b>年车龄</span>
+	            					<span><b>10.7</b>万公里</span>
+	            	</p>
+	            	<p class="new-name">[商家] | 北京华阳奥通汽车销售有限公司</p>
+	            	<div class="chelist-navR1">
+	            		<span>49.3</span>万
+	            	</div>
+				</div>
+			</dl>
+			<dl class="new-chelist">
+				<dt><a href=""><img src="imgs/che_1.jpg" alt=""></a></dt>
+				<div class="info">
+					<div class="info-title">
+						<a href="">路虎 发现 2014款 3.0 V6 SC HSE Luxury-更多车源请进店查看</a>
+					</div>
+					<p class="chelist-text">
+	            					<span><b>5</b>年车龄</span>
+	            					<span><b>10.7</b>万公里</span>
+	            	</p>
+	            	<p class="new-name">[商家] | 北京华阳奥通汽车销售有限公司</p>
+	            	<div class="chelist-navR1">
+	            		<span>49.3</span>万
+	            	</div>
+				</div>
+			</dl>
+			<dl class="new-chelist">
+				<dt><a href=""><img src="imgs/che_1.jpg" alt=""></a></dt>
+				<div class="info">
+					<div class="info-title">
+						<a href="">路虎 发现 2014款 3.0 V6 SC HSE Luxury-更多车源请进店查看</a>
+					</div>
+					<p class="chelist-text">
+	            					<span><b>5</b>年车龄</span>
+	            					<span><b>10.7</b>万公里</span>
+	            	</p>
+	            	<p class="new-name">[商家] | 北京华阳奥通汽车销售有限公司</p>
+	            	<div class="chelist-navR1">
+	            		<span>49.3</span>万
+	            	</div>
+				</div>
+			</dl>
+			<dl class="new-chelist">
+				<dt><a href=""><img src="imgs/che_1.jpg" alt=""></a></dt>
+				<div class="info">
+					<div class="info-title">
+						<a href="">路虎 发现 2014款 3.0 V6 SC HSE Luxury-更多车源请进店查看</a>
+					</div>
+					<p class="chelist-text">
+	            					<span><b>5</b>年车龄</span>
+	            					<span><b>10.7</b>万公里</span>
+	            	</p>
+	            	<p class="new-name">[商家] | 北京华阳奥通汽车销售有限公司</p>
+	            	<div class="chelist-navR1">
+	            		<span>49.3</span>万
+	            	</div>
+				</div>
+			</dl>
+			<dl class="new-chelist">
+				<dt><a href=""><img src="imgs/che_1.jpg" alt=""></a></dt>
+				<div class="info">
+					<div class="info-title">
+						<a href="">路虎 发现 2014款 3.0 V6 SC HSE Luxury-更多车源请进店查看</a>
+					</div>
+					<p class="chelist-text">
+	            					<span><b>5</b>年车龄</span>
+	            					<span><b>10.7</b>万公里</span>
+	            	</p>
+	            	<p class="new-name">[商家] | 北京华阳奥通汽车销售有限公司</p>
+	            	<div class="chelist-navR1">
+	            		<span>49.3</span>万
+	            	</div>
+				</div>
+			</dl>
+			<dl class="new-chelist">
+				<dt><a href=""><img src="imgs/che_1.jpg" alt=""></a></dt>
+				<div class="info">
+					<div class="info-title">
+						<a href="">路虎 发现 2014款 3.0 V6 SC HSE Luxury-更多车源请进店查看</a>
+					</div>
+					<p class="chelist-text">
+	            					<span><b>5</b>年车龄</span>
+	            					<span><b>10.7</b>万公里</span>
+	            	</p>
+	            	<p class="new-name">[商家] | 北京华阳奥通汽车销售有限公司</p>
+	            	<div class="chelist-navR1">
+	            		<span>49.3</span>万
+	            	</div>
+				</div>
+			</dl>
+			<dl class="new-chelist">
+				<dt><a href=""><img src="imgs/che_1.jpg" alt=""></a></dt>
+				<div class="info">
+					<div class="info-title">
+						<a href="">路虎 发现 2014款 3.0 V6 SC HSE Luxury-更多车源请进店查看</a>
+					</div>
+					<p class="chelist-text">
+	            					<span><b>5</b>年车龄</span>
+	            					<span><b>10.7</b>万公里</span>
+	            	</p>
+	            	<p class="new-name">[商家] | 北京华阳奥通汽车销售有限公司</p>
+	            	<div class="chelist-navR1">
+	            		<span>49.3</span>万
+	            	</div>
+				</div>
+			</dl>
+			<dl class="new-chelist">
+				<dt><a href=""><img src="imgs/che_1.jpg" alt=""></a></dt>
+				<div class="info">
+					<div class="info-title">
+						<a href="">路虎 发现 2014款 3.0 V6 SC HSE Luxury-更多车源请进店查看</a>
+					</div>
+					<p class="chelist-text">
+	            					<span><b>5</b>年车龄</span>
+	            					<span><b>10.7</b>万公里</span>
+	            	</p>
+	            	<p class="new-name">[商家] | 北京华阳奥通汽车销售有限公司</p>
+	            	<div class="chelist-navR1">
+	            		<span>49.3</span>万
+	            	</div>
+				</div>
+			</dl>
+			<dl class="new-chelist">
+				<dt><a href=""><img src="imgs/che_1.jpg" alt=""></a></dt>
+				<div class="info">
+					<div class="info-title">
+						<a href="">路虎 发现 2014款 3.0 V6 SC HSE Luxury-更多车源请进店查看</a>
+					</div>
+					<p class="chelist-text">
+	            					<span><b>5</b>年车龄</span>
+	            					<span><b>10.7</b>万公里</span>
+	            	</p>
+	            	<p class="new-name">[商家] | 北京华阳奥通汽车销售有限公司</p>
+	            	<div class="chelist-navR1">
+	            		<span>49.3</span>万
+	            	</div>
+				</div>
+			</dl>
+		</div>
+	</div>
+
+	<!-- 页脚 -->
+	<div id="footer">
+	<div class="footer">
+		<ul class="listul" id="listul">
+			<li><a href="" class="check">租房</a></li>
+			<li><a href="">二手房</a></li>
+			<li><a href="">商铺</a></li>
+			<li><a href="">写字楼</a></li>
+			<li><a href="">仓库厂房</a></li>
+		</ul>
+		<div  id="xuan">
+			<ul class="xuan show">
+				<li class="xuanli xuanactive">
+					<span>热门区域 : </span>
+					<a href="">朝阳租房</a><a href="">海淀租房</a><a href="">东城租房</a><a href="">西城租房</a><a href="">丰台租房</a><a href="">通州租房</a><a href="">石景山租房</a><a href="">房山租房</a><a href="">昌平租房</a><a href="">大兴租房</a><a href="">顺义租房</a><a href="">密云租房</a><a href="">怀柔租房</a><a href="">延庆租房</a>
+				</li>
+				<li class="xuanli">
+					<span>热门价格 : </span>
+					<a href="">600元以下</a><a href="">600-1000元</a><a href="">1000-1500元</a><a href="">1500-2000元</a><a href="">2000-3000元</a><a href="">3000-5000元</a><a href="">5000-8000元</a><a href="">8000元以上</a>
+				</li>
+				<li class="xuanli">
+					<span>热门地铁 : </span>
+					<a href="">1号线</a><a href="">2号线</a><a href="">4号线</a><a href="">5号线</a><a href="">6号线</a><a href="">7号线</a><a href="">8号线</a><a href="">9号线</a><a href="">10号线</a><a href="">13号线</a><a href="">14号线(东)</a>
+				</li>
+			</ul>
+			<ul class="xuan">
+				<li class="xuanli ">
+					<span>价格筛选 : </span>
+					<a href="">200万以下</a><a href="">200-250万</a><a href="">250-300万</a><a href="">300-350万</a><a href="">350-400万</a><a href="">400-500万</a><a href="">500-700万</a><a href="">700-1000万</a>
+				</li>
+				<li class="xuanli">
+					<span>热门区域 : </span>
+					<a href="">朝阳租房</a><a href="">海淀租房</a><a href="">东城租房</a><a href="">西城租房</a><a href="">丰台租房</a><a href="">通州租房</a><a href="">石景山租房</a><a href="">房山租房</a><a href="">昌平租房</a><a href="">大兴租房</a><a href="">顺义租房</a><a href="">密云租房</a><a href="">怀柔租房</a><a href="">延庆租房</a>
+				</li>
+				<li class="xuanli">
+					<span>热门地铁 : </span>
+					<a href="">1号线</a><a href="">2号线</a><a href="">4号线</a><a href="">5号线</a><a href="">6号线</a><a href="">7号线</a><a href="">8号线</a><a href="">9号线</a><a href="">10号线</a><a href="">13号线</a><a href="">14号线(东)</a>
+				</li>
+			</ul>
+			<ul class="xuan">
+				<li class="xuanli ">
+					<span>热门区域 : </span>
+					<a href="">朝阳商铺</a><a href="">海淀商铺</a><a href="">东城商铺</a><a href="">西城商铺</a><a href="">丰台商铺</a><a href="">通州商铺</a><a href="">石景山商铺</a><a href="">房山商铺</a><a href="">昌平商铺</a><a href="">大兴商铺</a><a href="">顺义商铺</a><a href="">密云商铺</a><a href="">怀柔商铺</a><a href="">延庆商铺</a>
+				</li>
+				<li class="xuanli">
+					<span>类型 : </span>
+					<a href="">商业街商铺</a><a href="">写字楼配套</a><a href="">社区底商</a><a href="">档口摊位</a><a href="">其他</a><a href="">临街门面</a><a href="">购物百货中心</a>
+				</li>
+			</ul>
+			<ul class="xuan">
+				<li class="xuanli ">
+					<span>热门区域 : </span>
+					<a href="">朝阳写字楼</a><a href="">海淀写字楼</a><a href="">东城写字楼</a><a href="">西城写字楼</a><a href="">丰台写字楼</a><a href="">通州写字楼</a><a href="">石景山写字楼</a><a href="">房山写字楼</a><a href="">昌平写字楼</a><a href="">大兴写字楼</a><a href="">顺义写字楼</a><a href="">密云写字楼</a><a href="">怀柔写字楼</a><a href="">延庆写字楼</a>
+				</li>
+				<li class="xuanli">
+					<span>热门类型 : </span>
+					<a href="">纯写字楼</a><a href="">商业综合体</a><a href="">商务公寓</a><a href="">商务酒店</a>
+				</li>
+			</ul>
+			<ul class="xuan">
+				<li class="xuanli ">
+					<span>热门区域 : </span>
+					<a href="">朝阳仓库厂房</a><a href="">海淀仓库厂房</a><a href="">东城仓库厂房</a><a href="">西城仓库厂房</a><a href="">丰台仓库厂房</a><a href="">通州仓库厂房</a><a href="">昌平仓库厂房</a><a href="">大兴仓库厂房</a><a href="">顺义仓库厂房</a><a href="">密云仓库厂房</a><a href="">怀柔仓库厂房</a><a href="">延庆仓库厂房</a>
+				</li>
+				<li class="xuanli">
+					<span>热门类型 : </span>
+					<a href="">厂房</a><a href="">车位</a><a href="">土地</a><a href="">仓库</a>
+				</li>
+			</ul>
+		</div>
+		<ul class="wei">
+			<li>
+				<a href="">关于Ganji</a>-
+				<a href="">赶集推广</a>-
+				<a href="">渠道合作</a>-
+				<a href="">帮助中心</a>-
+				<a href="">手机号被冒用</a>-
+				<a href="">友情链接</a>-
+				<a href="">招贤纳士</a>-
+				<a href="">区县导航</a>-
+				<a href="">手机赶集</a>-
+				<a href="">租房极速版</a>-
+				<a href="">租房触屏版</a>
+			</li>
+		</ul>
+	</div>
+	</div>
+	<div class="fanhui">
+		<div class="fanhuibox">
+			<a href="" class="fhdb"><img src="imgs/fanhui_0.jpg" alt="">
+				<span>返回顶端</span>
+			</a>
+			<a href="" class="yjfk"><img src="imgs/fanhui_1.jpg" alt="">
+			<span>意见反馈</span></a>
+		</div>
+	</div>
+	<script>
+		$(document).ready(function(){
+			$(window).scroll(function(){
+				if($(window).scrollTop()>$("#header").height()+$("#head-cont").height()){
+					$(".yinhead-cont").show();
+				}else{
+					$(".yinhead-cont").hide();
+				}
+			})
+		})
+	</script>
+	
+	<script>
+		var shouji=document.getElementById("shouji");
+		var ding=document.getElementById("ding");
+		var ganji=document.getElementById("ganji");
+		var dong=document.getElementById("dong");
+		shouji.onmouseover=function(){
+			ganji.style.display="block";
+		}
+		shouji.onmouseout=function(){
+			ganji.style.display="none";
+		}
+		ding.onmouseover=function(){
+			dong.style.display="block";
+		}
+		ding.onmouseout=function(){
+			dong.style.display="none";
+		}
+	</script>
+</body>
+</html>

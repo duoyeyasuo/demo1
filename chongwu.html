@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>宠物网</title>
+	<link rel="stylesheet" href="css/chongwu.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/list.js"></script>
+	<script src="js/tab.js"></script>
+</head>
+<body>
+	<div id="header">
+		<div class="headerCon">
+			<div class="city">
+				<a href="" class="dangqian">北京</a>
+				<a href="">[切换城市]</a>
+			</div>
+			<ul id="header-list">
+				<li><a href="">招聘</a></li>
+				<li><a href="">租房</a></li>
+				<li><a href="">二手房</a></li>
+				<li><a href="">车俩</a></li>
+				<li><a href="">二手</a></li>
+				<li  id="duo"><a href="">更多</a><div id="tou"></div></li>
+				<ul id="gengduo">
+					<li>
+						<em><a href="">房产</a></em>
+						<a href="">租房</a>
+						<a href="">二手房</a>
+						<a href="">商铺</a>
+						<a href="">写字楼</a>
+					</li>
+					<li>
+						<em><a href="">招聘</a></em>
+						<a href="">全职</a>
+						<a href="">兼职</a>
+						<a href="">简历库</a>
+					</li>
+					<li>
+						<em><a href="">车辆</a></em>
+						<a href="">二手车</a>
+						<a href="">摩托车</a>
+						<a href="">自行车</a>
+						<a href="">拼车</a>
+					</li>
+					<li>
+						<em><a href="">二手</a></em>
+						<a href="">手机</a>
+						<a href="">笔记本</a>
+						<a href="">家具</a>
+						<a href="">家电</a>
+					</li>
+					<li>
+						<em><a href="">宠物</a></em>
+						<a href="">泰迪熊</a>
+						<a href="">金毛犬</a>
+						<a href="">藏獒</a>
+						<a href="">哈士奇</a>
+					</li>
+					<li>
+						<em><a href="">服务</a></em>
+						<a href="">搬家</a>
+						<a href="">保姆</a>
+						<a href="">租车</a>
+						<a href="">身边服务</a>
+					</li>
+					<li>
+						<em><a href="">教育</a></em>
+						<a href="">职业培训</a>
+						<a href="">外语培训</a>
+						<a href="">学历培训</a>
+						<a href="">家教</a>
+					</li>
+				</ul>
+			</ul>
+			<div class="headerConR">
+				<div class="phonegan">
+					<img src="imgs/littlepho.jpg" alt="">
+					<span id="shouji">手机赶集
+						<img src="imgs/ganji.png" alt="" id="ganji">
+
+					</span>
+				</div>
+				<a href="" class="ganjidd" id="ding">赶集叮咚
+				<img src="imgs/dingdong.png" alt="" id="dong">
+				</a>
+				<a href="" class="woyaotg" id="woyaotg"><div class="jiantou" id="jiantou"></div>我要推广</a>
+				<ul id="tui">
+					<li><a href="">招聘推广</a></li>
+					<li><a href="">房产推广</a></li>
+					<li><a href="">本地服务</a></li>
+					<li><a href="">车辆推广</a></li>
+					<li><a href="">二手推广</a></li>
+					<li><a href="">宠物推广</a></li>
+				</ul>
+				<div class="zhudeng">
+					<a href="">免费注册</a>
+					<a href="">会员登录</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="head-cont">
+		<div class="head-cont">
+			<a href="index.html"><img src="imgs/helogo.jpg" alt=""></a>
+			<div class="sear">
+			<form action="">
+				<div id="search">
+					<input type="text" placeholder="想找什么？输入关键字试试" id="search-text" >
+						<div class="select">
+				<p>宠物</p>
+				<ul class="chuzu">
+					<li class="suoyou"><a href="">所有分类</a></li>
+				</ul>
+				<i><img src="imgs/xla.jpg" alt=""></i></div>
+					<input type="submit" id="sub" value="搜索">
+				</div>
+
+			</form></div>
+			<div class="fabu" id="xiu">修改/删除信息</div>
+			<div class="fabu"><img src="imgs/fabu.jpg" alt="">免费发布信息</div>			
+						
+		</div>	
+	</div>
+	<div class="yinhead-cont">
+		<div class="head-cont">
+			<img src="imgs/helogo.jpg" alt="">
+			<div class="sear">
+			<form action="">
+				<div id="search">
+					<input type="text" placeholder="想找什么？输入关键字试试" id="search-text" >
+						<div class="select">
+				<p>宠物</p>
+				<ul class="chuzu">
+					<li class="suoyou"><a href="">所有分类</a></li>
+				</ul>
+				<i><img src="imgs/xla.jpg" alt=""></i></div>
+					<input type="submit" id="sub" value="搜索">
+				</div>
+
+			</form></div>
+			<div class="fabu" id="xiu">修改/删除信息</div>
+			<div class="fabu"><img src="imgs/fabu.jpg" alt="">免费发布信息</div>	
+		</div>
+		</div>	
+	</div>
+	<div id="nav">
+		<div class="nav">
+			<div class="tiao">
+				<a href="index.html">北京赶集网</a>><h1>北京宠物</h1>
+			</div>
+			<div class="main">
+				<div id="main-left">
+					<div class="main-left">
+						<div class="left-nav">
+							<h3>快速导航</h3>
+							<div class="left-nav-list">	
+								<div class="list-cont">
+								<!-- 	<dl class="menu">
+										<dt>
+											<a href="">宠物狗</a>
+											<a href="" class="menu-right">狗狗大全</a>
+										</dt>
+										<dd>
+											<a href="">泰迪</a>
+											<a href="">泰迪</a>
+											<a href="">泰迪</a>
+											<a href="">泰迪</a>
+											<a href="">泰迪</a>
+											<a href="">泰迪</a>
+											<a href="">泰迪</a>
+										</dd>
+									</dl> -->
+									<script>
+									var str="";
+									for(var i in arr["menu"]){
+										str+="<dl class=\"menu\">";
+										str+="<dt><a href=\"\">"+arr["menu"][i][0]+"</a><a href=\"\" class=\"menu-right\">"+arr["menu"][i][1]+"</a></dt>";
+										str+="<dd>";
+										for(var k in arr["menu"][i][2]){
+											str+="<a href=\"\">"+arr["menu"][i][2][k]+"</a>";
+										}
+										str+="</dd></dl>";
+									}
+									document.write(str);
+									</script>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="main-right">
+					<div class="main-right-top">
+						<div class="pet-banner">
+							<img src="imgs/goubanner.jpg" alt="">
+						</div>
+						<div class="pet-life">
+							<div class="lifeBox">
+								<h3><img src="imgs/petlife.png" alt="">每日宠物生活</h3>
+								<ul class="art">
+									<li>
+										<a href="">在北京，办理狗证具体流程</a>
+									</li>
+									<li>
+										<a href="">在北京，办理狗证具体流程</a>
+									</li>
+									<li>
+										<a href="">在北京，办理狗证具体流程</a>
+									</li>
+									<li>
+										<a href="">在北京，办理狗证具体流程</a>
+									</li>
+									<li>
+										<a href="">在北京，办理狗证具体流程</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="main-right-bottom">
+						<div class="hot-pet">
+							<h3 class="hot-pet-title">
+								<span>查看更多宠物狗>></span>
+								<a href="">热门宠物狗</a>
+							</h3>
+							<ul class="content">
+								<li>
+									<a href=""><img src="imgs/pet_0.jpg" alt=""></a>
+									<div class="pet-name">
+										<span class="first-name">哈士奇</span>
+										<span class="newpet-life">
+											<a href="">交易</a>|<a href="">介绍</a>|<a href="">配种</a>
+										</span>
+									</div>
+									<ul class="pet-article">
+										<li><a href="">怎样进行哈士奇的教养训</a></li>
+										<li><a href="">训练哈士奇工程中应该注</a></li>
+										<li><a href="">详细介绍如何训练哈士奇</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href=""><img src="imgs/pet_0.jpg" alt=""></a>
+									<div class="pet-name">
+										<span class="first-name">哈士奇</span>
+										<span class="newpet-life">
+											<a href="">交易</a>|<a href="">介绍</a>|<a href="">配种</a>
+										</span>
+									</div>
+									<ul class="pet-article">
+										<li><a href="">怎样进行哈士奇的教养训</a></li>
+										<li><a href="">训练哈士奇工程中应该注</a></li>
+										<li><a href="">详细介绍如何训练哈士奇</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href=""><img src="imgs/pet_0.jpg" alt=""></a>
+									<div class="pet-name">
+										<span class="first-name">哈士奇</span>
+										<span class="newpet-life">
+											<a href="">交易</a>|<a href="">介绍</a>|<a href="">配种</a>
+										</span>
+									</div>
+									<ul class="pet-article">
+										<li><a href="">怎样进行哈士奇的教养训</a></li>
+										<li><a href="">训练哈士奇工程中应该注</a></li>
+										<li><a href="">详细介绍如何训练哈士奇</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href=""><img src="imgs/pet_0.jpg" alt=""></a>
+									<div class="pet-name">
+										<span class="first-name">哈士奇</span>
+										<span class="newpet-life">
+											<a href="">交易</a>|<a href="">介绍</a>|<a href="">配种</a>
+										</span>
+									</div>
+									<ul class="pet-article">
+										<li><a href="">怎样进行哈士奇的教养训</a></li>
+										<li><a href="">训练哈士奇工程中应该注</a></li>
+										<li><a href="">详细介绍如何训练哈士奇</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href=""><img src="imgs/pet_0.jpg" alt=""></a>
+									<div class="pet-name">
+										<span class="first-name">哈士奇</span>
+										<span class="newpet-life">
+											<a href="">交易</a>|<a href="">介绍</a>|<a href="">配种</a>
+										</span>
+									</div>
+									<ul class="pet-article">
+										<li><a href="">怎样进行哈士奇的教养训</a></li>
+										<li><a href="">训练哈士奇工程中应该注</a></li>
+										<li><a href="">详细介绍如何训练哈士奇</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="gougou">
+							<div class="gougou-title">
+								<a href="">狗狗大全</a>
+								<span>全部狗狗>></span>
+							</div>
+							<ul class="pet-all">
+								<li>
+									<a href=""><img src="imgs/petall_0.jpg" alt=""></a>
+									<span><a href="">不掉毛</a></span>
+								</li>
+								<li>
+									<a href=""><img src="imgs/petall_0.jpg" alt=""></a>
+									<span><a href="">不掉毛</a></span>
+								</li>
+								<li>
+									<a href=""><img src="imgs/petall_0.jpg" alt=""></a>
+									<span><a href="">不掉毛</a></span>
+								</li>
+								<li>
+									<a href=""><img src="imgs/petall_0.jpg" alt=""></a>
+									<span><a href="">不掉毛</a></span>
+								</li>
+								<li>
+									<a href=""><img src="imgs/petall_0.jpg" alt=""></a>
+									<span><a href="">不掉毛</a></span>
+								</li>
+								<li>
+									<a href=""><img src="imgs/petall_0.jpg" alt=""></a>
+									<span><a href="">不掉毛</a></span>
+								</li>
+							</ul>
+							<div class="pet-type">
+								<a href="">
+									<img src="imgs/pettype_0.jpg" alt="">
+								</a>
+								<p><a href="">小型犬</a></p>
+							</div>
+							<div class="pet-type">
+								<a href="">
+									<img src="imgs/pettype_0.jpg" alt="">
+								</a>
+								<p><a href="">小型犬</a></p>
+							</div>
+							<div class="pet-type">
+								<a href="">
+									<img src="imgs/pettype_0.jpg" alt="">
+								</a>
+								<p><a href="">小型犬</a></p>
+							</div>
+						</div>
+						<div class="xiangqin">
+							<div class="gougou-title">
+								<a href="">宠物相亲</a>
+								<span>更多>></span>
+							</div>
+							<ul class="xiangqin-con">
+								<li>
+									<a href=""><img src="imgs/xiang_0.jpg" alt=""></a>
+									<div class="xiang-txt">
+										<a href="">在365网站上被黑不给出怎么办怎么 - 1 元</a>
+									</div>
+								</li>
+								<li>
+									<a href=""><img src="imgs/xiang_0.jpg" alt=""></a>
+									<div class="xiang-txt">
+										<a href="">在365网站上被黑不给出怎么办怎么 - 1 元</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<ul class="floor">
+				<li>
+					<a href="#floor1"><img src="imgs/floor_0.png" alt=""></a>
+				</li>
+				<li>
+					<a href="#floor2"><img src="imgs/floor_1.jpg" alt=""></a>
+				</li>
+				<li>
+					<a href="#floor3"><img src="imgs/floor_2.jpg" alt=""></a>
+				</li>
+				<li>
+					<a href="#floor4"><img src="imgs/floor_3.jpg" alt=""></a>
+				</li>
+				<li>
+					<a href="#floor5"><img src="imgs/floor_4.png" alt=""></a>
+				</li>
+				<li>
+					<a href="#floor6"><img src="imgs/floor_5.png" alt=""></a>
+				</li>
+				<li>
+					<a href="#floor7"><img src="imgs/floor_6.png" alt=""></a>
+				</li>
+			</ul>
+			<div class="first-floor" id="floor1">
+				<h3 class="first-floor-title">
+					<ul class="title-right">
+						<li><a href="">宠物狗市场</a></li>
+						<li><a href="">狗粮</a></li>
+						<li><a href="">狗狗用品</a></li>
+						<li><a href="">狗狗用品</a></li>
+						<li><a href="">狗狗用品</a></li>
+						<li><a href="">狗狗用品</a></li>
+						<li><a href="">狗狗用品</a></li>
+						<li><a href="">狗狗用品</a></li>
+					</ul>
+						<span>1F</span>
+						<a href="" class="floor-name">宠物狗</a>
+				</h3>
+				<div class="first-floorLeft">
+					<h4><a href="">狗狗大全</a>/<a href="">护养知识</a></h4>
+					<ul class="floorCon">
+						<li>
+							<div class="floorCon-new">
+							<a href="">如何给萨摩狗狗买玩具？</a>
+							<a href="">小萨摩的饲喂管理</a>
+							<a href="">萨摩耶犬好养吗？</a>
+							</div>
+							<div class="floorCon-name"><a href="">
+							<img src="imgs/Ffloor_0.jpg" alt=""></a><span>萨摩耶</span></div>
+						</li>
+						<li>
+							<div class="floorCon-new">
+							<a href="">如何给萨摩狗狗买玩具？</a>
+							<a href="">小萨摩的饲喂管理</a>
+							<a href="">萨摩耶犬好养吗？</a>
+							</div>
+							<div class="floorCon-name"><a href="">
+							<img src="imgs/Ffloor_0.jpg" alt=""></a><span>萨摩耶</span></div>
+						</li>
+						<li>
+							<div class="floorCon-new">
+							<a href="">如何给萨摩狗狗买玩具？</a>
+							<a href="">小萨摩的饲喂管理</a>
+							<a href="">萨摩耶犬好养吗？</a>
+							</div>
+							<div class="floorCon-name"><a href="">
+							<img src="imgs/Ffloor_0.jpg" alt=""></a><span>萨摩耶</span></div>
+						</li>
+					</ul>
+					<div></div>
+				</div>
+				<div class="first-floorRight">
+					<h4 class="first-floorRight-title">
+						<span class="title-right"><a href="">泰迪 </a><a href="">藏獒 </a><a href="">金毛 </a><a href="">哈士奇 </a><a href="">德国牧羊犬 </a><a href="">博美 </a><a href="">萨摩耶 </a><a href="">拉布拉多</a> <a href="">更多»</a></span>
+						<strong><a href="">北京宠物狗交易</a></strong>
+					</h4>
+					<ul class="first-floorRight-cont">
+						<!-- <li><a href=""><img src="imgs/petcont_0.jpg" alt=""></a>
+							<div class="cont-news">
+								<a href="">专业繁殖阿拉斯加雪橇犬 颜色齐全 -<i>1300元</i></a>
+							</div> -->
+							<script>
+							var str="";
+							for(var k in arr["cont"]){
+								str+="<li><a href=\"\"><img src=\""+arr["cont"][k][0]+"\" alt=\"\"></a>";
+								str+="<div class=\"cont-news\"><a href=\"\">"+arr["cont"][k][1]+"<i>"+arr["cont"][k][2]+"</i></a></div></li>";
+							}
+							document.write(str);
+							</script>
+					</ul>
+				</div>
+				
+			</div>
+			<div class="second-floorRight" id="floor2">
+				<h3 class="first-floor-title">
+					<ul class="title-right">
+						<li><a href="">宠物猫市场</a></li>
+						<li><a href="">猫粮</a></li>
+						<li><a href="">猫咪用品</a></li>
+						<li><a href="">猫咪相亲</a></li>
+						<li><a href="">宠物服务</a></li>
+						<li><a href="">宠物寄养</a></li>
+						<li><a href="">宠物美容</a></li>
+						<li><a href="">宠物医院</a></li>
+						<li><a href="">更多>></a></li>
+					</ul>
+						<span>2F</span>
+						<a href="" class="floor-name">宠物猫</a>
+				</h3>
+				<ul class="first-floor-cont">
+					<script>
+						var str="";
+							for(var k in arr["mao"]){
+								str+="<li><a href=\"\"><img src=\""+arr["mao"][k][0]+"\" alt=\"\"></a>";
+								str+="<div class=\"contanier\"><a href=\"\">"+arr["mao"][k][1]+"<i>"+arr["mao"][k][2]+"</i></a></div></li>";
+							}
+							document.write(str);
+							</script>
+					</script>
+				</ul>
+			</div>
+			<div class="second-floorRight" id="floor3">
+				<h3 class="first-floor-title">
+					<ul class="title-right">
+						<li><a href="">观赏鱼市场</a></li>
+						<li><a href="">鱼食</a></li>
+						<li><a href="">鱼缸/水族箱</a></li>
+						<li><a href="">水族服务</a></li>
+						<li><a href="">更多>></a></li>
+					</ul>
+						<span>3F</span>
+						<a href="" class="floor-name">观赏鱼</a>
+				</h3>
+				<ul class="first-floor-cont">
+					<script>
+						var str="";
+							for(var k in arr["yu"]){
+								str+="<li><a href=\"\"><img src=\""+arr["yu"][k][0]+"\" alt=\"\"></a>";
+								str+="<div class=\"contanier\"><a href=\"\">"+arr["yu"][k][1]+"<i>"+arr["yu"][k][2]+"</i></a></div></li>";
+							}
+							document.write(str);
+							</script>
+					</script>
+				</ul>
+			</div>
+			<div class="second-floorRight" id="floor4">
+				<h3 class="first-floor-title">
+					<ul class="title-right">
+						<li><a href="">鹦鹉</a></li>
+						<li><a href="">八哥</a></li>
+						<li><a href="">鸽子</a></li>
+						<li><a href="">更多>></a></li>
+					</ul>
+						<span>4F</span>
+						<a href="" class="floor-name">玩赏鸟</a>
+				</h3>
+				<ul class="first-floor-cont">
+					<script>
+						var str="";
+							for(var k in arr["niao"]){
+								str+="<li><a href=\"\"><img src=\""+arr["niao"][k][0]+"\" alt=\"\"></a>";
+								str+="<div class=\"contanier\"><a href=\"\">"+arr["niao"][k][1]+"<i>"+arr["niao"][k][2]+"</i></a></div></li>";
+							}
+							document.write(str);
+							</script>
+					</script>
+				</ul>
+			</div>
+			<div class="second-floorRight" id="floor5">
+				<h3 class="first-floor-title">
+					<ul class="title-right">
+						<li><a href="">奇趣小宠</a></li>
+						<li><a href="">龙猫</a></li>
+						<li><a href="">宠物龟</a></li>
+						<li><a href="">仓鼠</a></li>
+						<li><a href="">宠物猪</a></li>
+						<li><a href="">更多>></a></li>
+					</ul>
+						<span>5F</span>
+						<a href="" class="floor-name">奇趣小宠</a>
+				</h3>
+				<ul class="first-floor-cont">
+					<script>
+						var str="";
+							for(var k in arr["qi"]){
+								str+="<li><a href=\"\"><img src=\""+arr["qi"][k][0]+"\" alt=\"\"></a>";
+								str+="<div class=\"contanier\"><a href=\"\">"+arr["qi"][k][1]+"<i>"+arr["qi"][k][2]+"</i></a></div></li>";
+							}
+							document.write(str);
+							</script>
+					</script>
+				</ul>
+			</div>
+			<div class="second-floorRight" id="floor6">
+				<h3 class="first-floor-title">
+					<ul class="title-right">
+						<li><a href="">狗粮</a></li>
+						<li><a href="">狗用品</a></li>
+						<li><a href="">猫粮</a></li>
+						<li><a href="">猫用品</a></li>
+						<li><a href="">鱼缸</a></li>
+						<li><a href="">宠物玩具</a></li>
+						<li><a href="">更多宠物用品</a></li>
+						<li><a href="">/</a></li>
+						<li><a href="">宠物医院</a></li>
+						<li><a href="">宠物寄养</a></li>
+						<li><a href="">宠物美容</a></li>
+						<li><a href="">水族服务</a></li>
+						<li><a href="">更多>></a></li>
+					</ul>
+						<span>6F</span>
+						<a href="" class="floor-name">宠物用品 / 宠物服务</a>
+				</h3>
+				<ul class="first-floor-cont">
+					<script>
+						var str="";
+							for(var k in arr["yong"]){
+								str+="<li><a href=\"\"><img src=\""+arr["yong"][k][0]+"\" alt=\"\"></a>";
+								str+="<div class=\"contanier\"><a href=\"\">"+arr["yong"][k][1]+"<i>"+arr["yong"][k][2]+"</i></a></div></li>";
+							}
+							document.write(str);
+							</script>
+					</script>
+				</ul>
+			</div>
+			<div class="second-floorRight" id="floor7">
+				<h3 class="first-floor-title">
+					<ul class="title-right">
+						<li><a href="">宠物救助</a></li>
+						<li><a href="">宠物赠送</a></li>
+						<li><a href="">领养宠物</a></li>
+						<li><a href="">更多>></a></li>
+					</ul>
+						<span>7F</span>
+						<a href="" class="floor-name">宠物救助/赠送</a>
+				</h3>
+				<ul class="first-floor-cont">
+					<script>
+						var str="";
+							for(var k in arr["jiu"]){
+								str+="<li><a href=\"\"><img src=\""+arr["jiu"][k][0]+"\" alt=\"\"></a>";
+								str+="<div class=\"contanier\"><a href=\"\">"+arr["jiu"][k][1]+"<i>"+arr["jiu"][k][2]+"</i></a></div></li>";
+							}
+							document.write(str);
+							</script>
+					</script>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer">
+	<div class="footer">
+		<ul class="listul" id="listul">
+			<li><a href="" class="check">租房</a></li>
+			<li><a href="">二手房</a></li>
+			<li><a href="">商铺</a></li>
+			<li><a href="">写字楼</a></li>
+			<li><a href="">仓库厂房</a></li>
+		</ul>
+		<div  id="xuan">
+			<ul class="xuan show">
+				<li class="xuanli xuanactive">
+					<span>热门区域 : </span>
+					<a href="">朝阳租房</a><a href="">海淀租房</a><a href="">东城租房</a><a href="">西城租房</a><a href="">丰台租房</a><a href="">通州租房</a><a href="">石景山租房</a><a href="">房山租房</a><a href="">昌平租房</a><a href="">大兴租房</a><a href="">顺义租房</a><a href="">密云租房</a><a href="">怀柔租房</a><a href="">延庆租房</a>
+				</li>
+				<li class="xuanli">
+					<span>热门价格 : </span>
+					<a href="">600元以下</a><a href="">600-1000元</a><a href="">1000-1500元</a><a href="">1500-2000元</a><a href="">2000-3000元</a><a href="">3000-5000元</a><a href="">5000-8000元</a><a href="">8000元以上</a>
+				</li>
+				<li class="xuanli">
+					<span>热门地铁 : </span>
+					<a href="">1号线</a><a href="">2号线</a><a href="">4号线</a><a href="">5号线</a><a href="">6号线</a><a href="">7号线</a><a href="">8号线</a><a href="">9号线</a><a href="">10号线</a><a href="">13号线</a><a href="">14号线(东)</a>
+				</li>
+			</ul>
+			<ul class="xuan">
+				<li class="xuanli ">
+					<span>价格筛选 : </span>
+					<a href="">200万以下</a><a href="">200-250万</a><a href="">250-300万</a><a href="">300-350万</a><a href="">350-400万</a><a href="">400-500万</a><a href="">500-700万</a><a href="">700-1000万</a>
+				</li>
+				<li class="xuanli">
+					<span>热门区域 : </span>
+					<a href="">朝阳租房</a><a href="">海淀租房</a><a href="">东城租房</a><a href="">西城租房</a><a href="">丰台租房</a><a href="">通州租房</a><a href="">石景山租房</a><a href="">房山租房</a><a href="">昌平租房</a><a href="">大兴租房</a><a href="">顺义租房</a><a href="">密云租房</a><a href="">怀柔租房</a><a href="">延庆租房</a>
+				</li>
+				<li class="xuanli">
+					<span>热门地铁 : </span>
+					<a href="">1号线</a><a href="">2号线</a><a href="">4号线</a><a href="">5号线</a><a href="">6号线</a><a href="">7号线</a><a href="">8号线</a><a href="">9号线</a><a href="">10号线</a><a href="">13号线</a><a href="">14号线(东)</a>
+				</li>
+			</ul>
+			<ul class="xuan">
+				<li class="xuanli ">
+					<span>热门区域 : </span>
+					<a href="">朝阳商铺</a><a href="">海淀商铺</a><a href="">东城商铺</a><a href="">西城商铺</a><a href="">丰台商铺</a><a href="">通州商铺</a><a href="">石景山商铺</a><a href="">房山商铺</a><a href="">昌平商铺</a><a href="">大兴商铺</a><a href="">顺义商铺</a><a href="">密云商铺</a><a href="">怀柔商铺</a><a href="">延庆商铺</a>
+				</li>
+				<li class="xuanli">
+					<span>类型 : </span>
+					<a href="">商业街商铺</a><a href="">写字楼配套</a><a href="">社区底商</a><a href="">档口摊位</a><a href="">其他</a><a href="">临街门面</a><a href="">购物百货中心</a>
+				</li>
+			</ul>
+			<ul class="xuan">
+				<li class="xuanli ">
+					<span>热门区域 : </span>
+					<a href="">朝阳写字楼</a><a href="">海淀写字楼</a><a href="">东城写字楼</a><a href="">西城写字楼</a><a href="">丰台写字楼</a><a href="">通州写字楼</a><a href="">石景山写字楼</a><a href="">房山写字楼</a><a href="">昌平写字楼</a><a href="">大兴写字楼</a><a href="">顺义写字楼</a><a href="">密云写字楼</a><a href="">怀柔写字楼</a><a href="">延庆写字楼</a>
+				</li>
+				<li class="xuanli">
+					<span>热门类型 : </span>
+					<a href="">纯写字楼</a><a href="">商业综合体</a><a href="">商务公寓</a><a href="">商务酒店</a>
+				</li>
+			</ul>
+			<ul class="xuan">
+				<li class="xuanli ">
+					<span>热门区域 : </span>
+					<a href="">朝阳仓库厂房</a><a href="">海淀仓库厂房</a><a href="">东城仓库厂房</a><a href="">西城仓库厂房</a><a href="">丰台仓库厂房</a><a href="">通州仓库厂房</a><a href="">昌平仓库厂房</a><a href="">大兴仓库厂房</a><a href="">顺义仓库厂房</a><a href="">密云仓库厂房</a><a href="">怀柔仓库厂房</a><a href="">延庆仓库厂房</a>
+				</li>
+				<li class="xuanli">
+					<span>热门类型 : </span>
+					<a href="">厂房</a><a href="">车位</a><a href="">土地</a><a href="">仓库</a>
+				</li>
+			</ul>
+		</div>
+		<ul class="wei">
+			<li>
+				<a href="">关于Ganji</a>-
+				<a href="">赶集推广</a>-
+				<a href="">渠道合作</a>-
+				<a href="">帮助中心</a>-
+				<a href="">手机号被冒用</a>-
+				<a href="">友情链接</a>-
+				<a href="">招贤纳士</a>-
+				<a href="">区县导航</a>-
+				<a href="">手机赶集</a>-
+				<a href="">租房极速版</a>-
+				<a href="">租房触屏版</a>
+			</li>
+		</ul>
+	</div>
+	</div>
+	<div class="fanhui">
+		<div class="fanhuibox">
+			<a href="" class="fhdb"><img src="imgs/fanhui_0.jpg" alt="">
+				<span>返回顶端</span>
+			</a>
+			<a href="" class="yjfk"><img src="imgs/fanhui_1.jpg" alt="">
+			<span>意见反馈</span></a>
+		</div>
+	</div>
+	<script>
+		$(document).ready(function(){
+			$(window).scroll(function(){
+				if($(window).scrollTop()>$("#header").height()+$("#head-cont").height()){
+					$(".yinhead-cont").show();
+				}else{
+					$(".yinhead-cont").hide();
+				}
+			})
+		})
+	</script>
+	<script>
+		var shouji=document.getElementById("shouji");
+		var ding=document.getElementById("ding");
+		var ganji=document.getElementById("ganji");
+		var dong=document.getElementById("dong");
+		shouji.onmouseover=function(){
+			ganji.style.display="block";
+		}
+		shouji.onmouseout=function(){
+			ganji.style.display="none";
+		}
+		ding.onmouseover=function(){
+			dong.style.display="block";
+		}
+		ding.onmouseout=function(){
+			dong.style.display="none";
+		}
+	</script>
+</body>
+</html>

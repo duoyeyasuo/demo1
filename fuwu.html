@@ -1,0 +1,1603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>北京生活服务</title>
+	<link rel="stylesheet" href="css/fuwu.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/newlun.js"></script>
+	<script src="js/list.js"></script>
+	<script src="js/tab.js"></script>
+	<script src="js/tab1.js"></script>
+</head>
+<body>
+	<div id="header">
+		<div class="headerCon">
+			<div class="city">
+				<a href="" class="dangqian">北京</a>
+				<a href="">[切换城市]</a>
+			</div>
+			<ul id="header-list">
+				<li><a href="">招聘</a></li>
+				<li><a href="">租房</a></li>
+				<li><a href="">二手房</a></li>
+				<li><a href="">车俩</a></li>
+				<li><a href="">二手</a></li>
+				<li><a href="">更多</a></li>
+			</ul>
+			<div class="headerConR">
+				<div class="phonegan">
+					<img src="imgs/littlepho.jpg" alt="">
+					<span>手机赶集</span>
+				</div>
+				<a href="" class="ganjidd">赶集叮咚</a>
+				<a href="" class="woyaotg">我要推广</a>
+				<div class="zhudeng">
+					<a href="">免费注册</a>
+					<a href="">会员登录</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="head-cont">
+		<div class="head-cont">
+			<img src="imgs/helogo.jpg" alt="">
+			<div class="sear">
+			<form action="">
+				<div id="search">
+					<input type="text" placeholder="想找什么？输入关键字试试" id="search-text" >
+						<div class="select">
+				<p>本地服务</p>
+				<ul class="chuzu">
+					<li class="suoyou"><a href="">所有分类</a></li>
+				</ul>
+				<i><img src="imgs/xla.jpg" alt=""></i></div>
+					<input type="submit" id="sub" value="搜索">
+				</div>
+
+			</form></div>
+			
+			<div class="fabu"><img src="imgs/fabu.jpg" alt="">免费登记店铺</div>			
+		</div>	
+	</div>
+	<div class="yinhead-cont">
+		<div class="head-cont">
+			<img src="imgs/helogo.jpg" alt="">
+			<div class="sear">
+			<form action="">
+				<div id="search">
+					<input type="text" placeholder="想找什么？输入关键字试试" id="search-text" >
+						<div class="select">
+				<p>本地服务</p>
+				<ul class="chuzu">
+					<li class="suoyou"><a href="">所有分类</a></li>
+				</ul>
+				<i><img src="imgs/xla.jpg" alt=""></i></div>
+					<input type="submit" id="sub" value="搜索">
+				</div>
+			</form></div>
+			<div class="fabu"><img src="imgs/fabu.jpg" alt="">免费登记店铺</div>
+		</div>
+		</div>	
+	</div>
+	<div id="nav">
+		<div class="nav">
+			<div class="tiao">
+				<a href="index.html">北京赶集网</a>><h1>北京生活服务</h1>
+			</div>
+			<div class="main">
+				<div class="main-left">
+					<div class="left-nav">
+						<h3>生活快速导航</h3>
+						<div class="left-nav-list">
+								<script>
+									var str="";
+									for(var i in arr["item"]){
+										str+="<div class=\"item\">";
+										str+="<div class=\"big-tit\">	<img src=\"imgs/youjian.jpg\" alt=\"\" class=\"youjian\">";
+										str+="<p class=\"first-p\"><img src=\""+arr["item"][i][0]+"\" alt=\"\">";
+										str+="<a href=\"\">"+arr["item"][i][1]+"</a></p>";
+										str+="<p class=\"second-p\">";
+										str+="<a href=\"banjia.html\">"+arr["item"][i][2]+"</a>";
+										str+="<a href=\"\">"+arr["item"][i][3]+"</a>";
+										str+="<a href=\"\">"+arr["item"][i][4]+"</a>";
+										str+="<a href=\"\">"+arr["item"][i][5]+"</a>";
+										str+="</p></div></div>";
+									}
+									document.write(str);
+								</script>
+							<!--<div class="item">
+								<div class="big-tit">	
+								 	<img src="imgs/youjian.jpg" alt="" class="youjian">
+									<p class="first-p"><img src="imgs/leftnav_0.jpg" alt="">
+										<a href="">家政服务</a>
+									</p>
+									<p class="second-p">
+										<a href="">搬家</a>
+										<a href="" style="color:red">保洁</a>
+										<a href="" style="color:red">月嫂</a>
+										<a href="">维修</a>
+									</p>
+								</div>
+							</div> -->
+						</div>
+					</div>
+				</div>
+				<div class="main-nav">
+					<div class="box" id="box">
+						<div class="inner">
+							<ul class="ul">
+								<li><a href="#"><img src="imgs/shenglun_0.jpg" alt=""></a></li>
+								<li><a href="#"><img src="imgs/shenglun_1.jpg" alt=""></a></li>
+								<li><a href="#"><img src="imgs/shenglun_2.jpg" alt=""></a></li>
+							</ul>
+							<ol class="bar"></ol>
+						</div>
+					</div>
+					<div class="boxBottom-title">
+						<a href="">热门推荐</a>
+					</div>
+					<div class="boxBottom-pic">
+						<ul>
+							<li><a href=""><img src="imgs/pic_0.png" alt=""></a></li>
+							<li><a href=""><img src="imgs/pic_1.png" alt=""></a></li>
+							<li><a href=""><img src="imgs/pic_2.jpg" alt=""></a></li>
+							<li><a href=""><img src="imgs/pic_3.png" alt=""></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="main-right">
+					<div class="notice">
+						<h4>
+							<span>赶集公告</span>
+							<a href="">抢占商机立即开店</a>
+						</h4>
+						<div class="con">
+							<p class="con-title">北京地区:</p>
+							<p>赶集店铺服务已经覆盖了<span class="title-red">362</span>个行业</p>
+							<p>拥有诚信店铺<span class="title-red">794875</span>家!</p>
+							<p>赶集已经帮助<span class="title-red">3077925</span>个商家提高了业务！</p>
+						</div>
+					</div> 
+					<div class="shangjia">
+						<span>商家入驻</span>
+						<p></p>
+					</div>
+					<a href="" id="dianpu"><img src="imgs/dianpu.jpg" alt=""></a>
+					<div class="shangjia">
+						<span>商家指引</span>
+						<p></p>
+					</div>
+					<div class="help">
+						<ul>
+							<li><a href="">什么是赶集店铺？</a></li>
+							<li><a href="">开通赶集店铺有什么好处？</a></li>
+							<li><a href="">如何注册店铺？</a></li>
+							<li><a href="">店铺有哪些功能?</a></li>
+							<li><a href="">赶集帮帮商家优势？</a></li>
+							<li><a href="">店铺账号密码忘了？去找回</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="conBox">
+				<h3>1F 家政服务</h3>
+				<div class="conta">
+					<div class="conta1">
+						<a href=""><img src="imgs/conta1.png" alt=""></a>
+					</div>
+					<div class="conta2">
+						<div class="conta2-top"><a href=""><img src="imgs/conta2top.png" alt=""></a></div>
+						<div class="conta2-bottom"><a href=""><img src="imgs/conta2bottom.png" alt=""></a></div>
+					</div>
+					<div class="conta2">
+						<div class="conta2-top"><a href=""><img src="imgs/conta3top.jpg" alt=""></a></div>
+						<div class="conta2-bottom"><a href=""><img src="imgs/conta3bottom.jpg" alt=""></a></div>
+					</div>
+					<div class="conta2">
+						<div class="conta-top"><a href=""><img src="imgs/zhuan.jpg" alt="imgs/zhuan.jpg"></a></div>
+						<div class="conta2-bottom"><a href=""><img src="imgs/conta4.png" alt=""></a></div>
+					</div>
+					<div class="tab">
+						<div class="tablink" id="tablink">
+							<ul>
+								<li class="activelink"> 搬家</li>
+								<li> 家政</li>
+								<li> 家电维修</li>
+							</ul>
+						</div>
+						<div id="tablinkCon">
+						<ul class="tablinkCon act" >
+							<li>
+								<em>1</em>
+								<a href="">北京搬家 居民搬家 公司搬家 长短途拉货</a>
+							</li>
+							<li>
+								<em>2</em>
+								<a href="">朝阳门金杯车搬家13811649057</a>
+							</li>
+							<li>
+								<em>3</em>
+								<a href="">正规居民搬家   厢货搬家260起步</a>
+							</li>
+							<li>
+								<em class="green">4</em>
+								<a href="">280起步 专业提供住宅搬家 办公室搬迁</a>
+							</li>
+							<li>
+								<em class="green">5</em>
+								<a href="">北京聚缘搬家公司</a>
+							</li>
+						</ul>
+						<ul class="tablinkCon">
+							<li>
+								<em>1</em>
+								<a href="">信誉最好的家政--瑞多帮</a>
+							</li>
+							<li>
+								<em>2</em>
+								<a href="">商家推荐金牌月嫂，高端育儿嫂保姆老年护理</a>
+							</li>
+							<li>
+								<em>3</em>
+								<a href="">商家推荐金牌月嫂，高端育儿嫂保姆老年护理</a>
+							</li>
+							<li>
+								<em class="green">4</em>
+								<a href="">全海淀—十年老店三星级家政30名保姆待岗</a>
+							</li>
+							<li>
+								<em class="green">5</em>
+								<a href="">亦庄家政服务—诚挚爱心家政</a>
+							</li>
+						</ul>
+						<ul class="tablinkCon">
+							<li>
+								<em>1</em>
+								<a href="">北京庆云电器维修有限公司</a>
+							</li>
+							<li>
+								<em>2</em>
+								<a href="">进口小电器维修公司</a>
+							</li>
+							<li>
+								<em>3</em>
+								<a href="">北京住哪也空调热水器维修，洗衣机冰箱</a>
+							</li>
+							<li>
+								<em class="green">4</em>
+								<a href="">专业家用商用中央空调维保维修加氟清洗拆装</a>
+							</li>
+							<li>
+								<em class="green">5</em>
+								<a href="">洗衣机维修清洗热水器安装空调加氟油烟机</a>
+							</li>
+						</ul>
+						</div>
+					</div>
+				</div>
+				<h3>2F 装修装饰 | 建材</h3>
+				<div class="conta">
+					<div class="conta1">
+						<a href=""><img src="imgs/conta1-2.png" alt=""></a>
+					</div>
+					<div class="conta2">
+						<div class="conta2-top"><a href=""><img src="imgs/conta2-1top.png" alt=""></a></div>
+						<div class="conta2-bottom"><a href=""><img src="imgs/conta2-1bottom.png" alt=""></a></div>
+					</div>
+					<div class="conta2">
+						<div class="conta2-top"><a href=""><img src="imgs/conta3-1top.jpg" alt=""></a></div>
+						<div class="conta2-bottom"><a href=""><img src="imgs/conta3-1bottom.jpg" alt=""></a></div>
+					</div>
+					<div class="conta2">
+						<div class="conta2-top"><a href=""><img src="imgs/conta4-1top.png" alt=""></a></div>
+						<div class="conta2-bottom"><a href=""><img src="imgs/conta4-1bottom.png" alt=""></a></div>
+					</div>
+					<div class="tab">
+						<div class="tablink" id="tablink1">
+							<ul>
+								<li class="activelink"> 搬家</li>
+								<li> 家政</li>
+								<li> 家电维修</li>
+							</ul>
+						</div>
+						<div id="tablinkCon1">
+						<ul class="tablinkCon act" >
+							<li>
+								<em>1</em>
+								<a href="">北京搬家 居民搬家 公司搬家 长短途拉货</a>
+							</li>
+							<li>
+								<em>2</em>
+								<a href="">朝阳门金杯车搬家13811649057</a>
+							</li>
+							<li>
+								<em>3</em>
+								<a href="">正规居民搬家   厢货搬家260起步</a>
+							</li>
+							<li>
+								<em class="green">4</em>
+								<a href="">280起步 专业提供住宅搬家 办公室搬迁</a>
+							</li>
+							<li>
+								<em class="green">5</em>
+								<a href="">北京聚缘搬家公司</a>
+							</li>
+						</ul>
+						<ul class="tablinkCon">
+							<li>
+								<em>1</em>
+								<a href="">信誉最好的家政--瑞多帮</a>
+							</li>
+							<li>
+								<em>2</em>
+								<a href="">商家推荐金牌月嫂，高端育儿嫂保姆老年护理</a>
+							</li>
+							<li>
+								<em>3</em>
+								<a href="">商家推荐金牌月嫂，高端育儿嫂保姆老年护理</a>
+							</li>
+							<li>
+								<em class="green">4</em>
+								<a href="">全海淀—十年老店三星级家政30名保姆待岗</a>
+							</li>
+							<li>
+								<em class="green">5</em>
+								<a href="">亦庄家政服务—诚挚爱心家政</a>
+							</li>
+						</ul>
+						<ul class="tablinkCon">
+							<li>
+								<em>1</em>
+								<a href="">北京庆云电器维修有限公司</a>
+							</li>
+							<li>
+								<em>2</em>
+								<a href="">进口小电器维修公司</a>
+							</li>
+							<li>
+								<em>3</em>
+								<a href="">北京住哪也空调热水器维修，洗衣机冰箱</a>
+							</li>
+							<li>
+								<em class="green">4</em>
+								<a href="">专业家用商用中央空调维保维修加氟清洗拆装</a>
+							</li>
+							<li>
+								<em class="green">5</em>
+								<a href="">洗衣机维修清洗热水器安装空调加氟油烟机</a>
+							</li>
+						</ul>
+						</div>
+					</div>
+				</div>
+				<h3>3F 汽车服务</h3>
+				<div class="conta">
+					<div class="conta1">
+						<a href=""><img src="imgs/conta1-3.png" alt=""></a>
+					</div>
+					<div class="conta2">
+						<div class="conta2-top"><a href=""><img src="imgs/conta3-1top.png" alt=""></a></div>
+						<div class="conta2-bottom"><a href=""><img src="imgs/conta3-1bottom.png" alt=""></a></div>
+					</div>
+					<div class="conta2">
+						<div class="conta2-top"><a href=""><img src="imgs/conta3-2top.png" alt=""></a></div>
+						<div class="conta2-bottom"><a href=""><img src="imgs/conta3-2bottom.png" alt=""></a></div>
+					</div>
+					<div class="conta2">
+						<div class="conta2-top"><a href=""><img src="imgs/conta3-3top.png" alt=""></a></div>
+						<div class="conta2-bottom"><a href=""><img src="imgs/conta3-3bottom.png" alt=""></a></div>
+					</div>
+					<div class="tab">
+						<div class="tablink" id="tablink2">
+							<ul>
+								<li class="activelink"> 搬家</li>
+								<li> 家政</li>
+								<li> 家电维修</li>
+							</ul>
+						</div>
+						<div id="tablinkCon2">
+						<ul class="tablinkCon act" >
+							<li>
+								<em>1</em>
+								<a href="">北京搬家 居民搬家 公司搬家 长短途拉货</a>
+							</li>
+							<li>
+								<em>2</em>
+								<a href="">朝阳门金杯车搬家13811649057</a>
+							</li>
+							<li>
+								<em>3</em>
+								<a href="">正规居民搬家   厢货搬家260起步</a>
+							</li>
+							<li>
+								<em class="green">4</em>
+								<a href="">280起步 专业提供住宅搬家 办公室搬迁</a>
+							</li>
+							<li>
+								<em class="green">5</em>
+								<a href="">北京聚缘搬家公司</a>
+							</li>
+						</ul>
+						<ul class="tablinkCon">
+							<li>
+								<em>1</em>
+								<a href="">信誉最好的家政--瑞多帮</a>
+							</li>
+							<li>
+								<em>2</em>
+								<a href="">商家推荐金牌月嫂，高端育儿嫂保姆老年护理</a>
+							</li>
+							<li>
+								<em>3</em>
+								<a href="">商家推荐金牌月嫂，高端育儿嫂保姆老年护理</a>
+							</li>
+							<li>
+								<em class="green">4</em>
+								<a href="">全海淀—十年老店三星级家政30名保姆待岗</a>
+							</li>
+							<li>
+								<em class="green">5</em>
+								<a href="">亦庄家政服务—诚挚爱心家政</a>
+							</li>
+						</ul>
+						<ul class="tablinkCon">
+							<li>
+								<em>1</em>
+								<a href="">北京庆云电器维修有限公司</a>
+							</li>
+							<li>
+								<em>2</em>
+								<a href="">进口小电器维修公司</a>
+							</li>
+							<li>
+								<em>3</em>
+								<a href="">北京住哪也空调热水器维修，洗衣机冰箱</a>
+							</li>
+							<li>
+								<em class="green">4</em>
+								<a href="">专业家用商用中央空调维保维修加氟清洗拆装</a>
+							</li>
+							<li>
+								<em class="green">5</em>
+								<a href="">洗衣机维修清洗热水器安装空调加氟油烟机</a>
+							</li>
+						</ul>
+						</div>
+					</div>
+				</div>
+				<h3>4F 婚庆 | 摄影</h3>
+				<div class="conta">
+					<div class="conta1">
+						<a href=""><img src="imgs/conta1-4.png" alt=""></a>
+					</div>
+					<div class="conta2">
+						<div class="conta2-top"><a href=""><img src="imgs/conta2-4top.png" alt=""></a></div>
+						<div class="conta2-bottom"><a href=""><img src="imgs/conta2-4bottom.png" alt=""></a></div>
+					</div>
+					<div class="conta2">
+						<div class="conta2-top"><a href=""><img src="imgs/conta3-4top.png" alt=""></a></div>
+						<div class="conta2-bottom"><a href=""><img src="imgs/conta3-4bottom.png" alt=""></a></div>
+					</div>
+					<div class="conta2">
+						<div class="conta2-top"><a href=""><img src="imgs/conta4-4top.png" alt=""></a></div>
+						<div class="conta2-bottom"><a href=""><img src="imgs/conta4-4bottom.png" alt=""></a></div>
+					</div>
+					<div class="tab">
+						<div class="tablink" id="tablink3">
+							<ul>
+								<li class="activelink"> 搬家</li>
+								<li> 家政</li>
+								<li> 家电维修</li>
+							</ul>
+						</div>
+						<div id="tablinkCon3">
+						<ul class="tablinkCon act" >
+							<li>
+								<em>1</em>
+								<a href="">北京搬家 居民搬家 公司搬家 长短途拉货</a>
+							</li>
+							<li>
+								<em>2</em>
+								<a href="">朝阳门金杯车搬家13811649057</a>
+							</li>
+							<li>
+								<em>3</em>
+								<a href="">正规居民搬家   厢货搬家260起步</a>
+							</li>
+							<li>
+								<em class="green">4</em>
+								<a href="">280起步 专业提供住宅搬家 办公室搬迁</a>
+							</li>
+							<li>
+								<em class="green">5</em>
+								<a href="">北京聚缘搬家公司</a>
+							</li>
+						</ul>
+						<ul class="tablinkCon">
+							<li>
+								<em>1</em>
+								<a href="">信誉最好的家政--瑞多帮</a>
+							</li>
+							<li>
+								<em>2</em>
+								<a href="">商家推荐金牌月嫂，高端育儿嫂保姆老年护理</a>
+							</li>
+							<li>
+								<em>3</em>
+								<a href="">商家推荐金牌月嫂，高端育儿嫂保姆老年护理</a>
+							</li>
+							<li>
+								<em class="green">4</em>
+								<a href="">全海淀—十年老店三星级家政30名保姆待岗</a>
+							</li>
+							<li>
+								<em class="green">5</em>
+								<a href="">亦庄家政服务—诚挚爱心家政</a>
+							</li>
+						</ul>
+						<ul class="tablinkCon">
+							<li>
+								<em>1</em>
+								<a href="">北京庆云电器维修有限公司</a>
+							</li>
+							<li>
+								<em>2</em>
+								<a href="">进口小电器维修公司</a>
+							</li>
+							<li>
+								<em>3</em>
+								<a href="">北京住哪也空调热水器维修，洗衣机冰箱</a>
+							</li>
+							<li>
+								<em class="green">4</em>
+								<a href="">专业家用商用中央空调维保维修加氟清洗拆装</a>
+							</li>
+							<li>
+								<em class="green">5</em>
+								<a href="">洗衣机维修清洗热水器安装空调加氟油烟机</a>
+							</li>
+						</ul>
+						</div>
+					</div>
+				</div>
+				<h3>5F 商务服务</h3>
+				<div class="conta">
+					<div class="conta1">
+						<a href=""><img src="imgs/conta1-5.png" alt=""></a>
+					</div>
+					<div class="conta2">
+						<div class="conta2-top"><a href=""><img src="imgs/conta2-5top.png" alt=""></a></div>
+						<div class="conta2-bottom"><a href=""><img src="imgs/conta2-5bottom.png" alt=""></a></div>
+					</div>
+					<div class="conta2">
+						<div class="conta2-top"><a href=""><img src="imgs/conta3-5top.png" alt=""></a></div>
+						<div class="conta2-bottom"><a href=""><img src="imgs/conta3-5bottom.png" alt=""></a></div>
+					</div>
+					<div class="conta2">
+						<div class="conta-top"><a href=""><img src="imgs/conta4-5top.png" alt=""></a></div>
+						<div class="conta2-bottom"><a href=""><img src="imgs/conta4-5bottom.png" alt=""></a></div>
+					</div>
+					<div class="tab">
+						<div class="tablink" id="tablink4">
+							<ul>
+								<li class="activelink"> 搬家</li>
+								<li> 家政</li>
+								<li> 家电维修</li>
+							</ul>
+						</div>
+						<div id="tablinkCon4">
+						<ul class="tablinkCon act" >
+							<li>
+								<em>1</em>
+								<a href="">北京搬家 居民搬家 公司搬家 长短途拉货</a>
+							</li>
+							<li>
+								<em>2</em>
+								<a href="">朝阳门金杯车搬家13811649057</a>
+							</li>
+							<li>
+								<em>3</em>
+								<a href="">正规居民搬家   厢货搬家260起步</a>
+							</li>
+							<li>
+								<em class="green">4</em>
+								<a href="">280起步 专业提供住宅搬家 办公室搬迁</a>
+							</li>
+							<li>
+								<em class="green">5</em>
+								<a href="">北京聚缘搬家公司</a>
+							</li>
+						</ul>
+						<ul class="tablinkCon">
+							<li>
+								<em>1</em>
+								<a href="">信誉最好的家政--瑞多帮</a>
+							</li>
+							<li>
+								<em>2</em>
+								<a href="">商家推荐金牌月嫂，高端育儿嫂保姆老年护理</a>
+							</li>
+							<li>
+								<em>3</em>
+								<a href="">商家推荐金牌月嫂，高端育儿嫂保姆老年护理</a>
+							</li>
+							<li>
+								<em class="green">4</em>
+								<a href="">全海淀—十年老店三星级家政30名保姆待岗</a>
+							</li>
+							<li>
+								<em class="green">5</em>
+								<a href="">亦庄家政服务—诚挚爱心家政</a>
+							</li>
+						</ul>
+						<ul class="tablinkCon">
+							<li>
+								<em>1</em>
+								<a href="">北京庆云电器维修有限公司</a>
+							</li>
+							<li>
+								<em>2</em>
+								<a href="">进口小电器维修公司</a>
+							</li>
+							<li>
+								<em>3</em>
+								<a href="">北京住哪也空调热水器维修，洗衣机冰箱</a>
+							</li>
+							<li>
+								<em class="green">4</em>
+								<a href="">专业家用商用中央空调维保维修加氟清洗拆装</a>
+							</li>
+							<li>
+								<em class="green">5</em>
+								<a href="">洗衣机维修清洗热水器安装空调加氟油烟机</a>
+							</li>
+						</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<h3>
+					<a href="">更多>></a>
+					<span>全部生活服务类目</span>
+				</h3>
+				<div class="containerBox">
+					<div class="onebox">
+						<h4>居家常用服务黄页</h4>
+						<dl>
+							<dt>
+								<a href="">家政</a><span>>></span>
+								<a href="">保洁</a><span>>></span>
+								<a href=""><img src="imgs/good.jpg" alt=""></a>
+							</dt>
+							<dd>
+								<!-- <a href="">月嫂</a> -->
+								<script>
+								var str="";
+								for(var i in arr["jiazheng"]){
+									str+="<a href=\"\">"+arr["jiazheng"][i]+"</a>";
+								}
+								document.write(str);
+								</script>
+							</dd>
+						</dl>
+						<dl>
+							<dt>
+								<a href="">搬家</a><span>>></span>
+							</dt>
+							<dd>
+								<!-- <a href="">月嫂</a> -->
+								<script>
+								var str="";
+								for(var i in arr["jiazheng"]){
+									str+="<a href=\"\">"+arr["jiazheng"][i]+"</a>";
+								}
+								document.write(str);
+								</script>
+							</dd>
+						</dl>
+						<dl>
+							<dt>
+								<a href="">便民服务</a><span>>></span>
+							</dt>
+							<dd>
+								<!-- <a href="">月嫂</a> -->
+								<script>
+								var str="";
+								for(var i in arr["jiazheng"]){
+									str+="<a href=\"\">"+arr["jiazheng"][i]+"</a>";
+								}
+								document.write(str);
+								</script>
+							</dd>
+						</dl>
+						<dl>
+							<dt>
+								<a href="">生活配送</a><span>>></span>
+							</dt>
+							<dd>
+								<!-- <a href="">月嫂</a> -->
+								<script>
+								var str="";
+								for(var i in arr["jiazheng"]){
+									str+="<a href=\"\">"+arr["jiazheng"][i]+"</a>";
+								}
+								document.write(str);
+								</script>
+							</dd>
+						</dl>
+						<dl>
+							<dt>
+								<a href="">快递/物流/货运</a><span>>></span>
+							</dt>
+							<dd>
+								<!-- <a href="">月嫂</a> -->
+								<script>
+								var str="";
+								for(var i in arr["jiazheng"]){
+									str+="<a href=\"\">"+arr["jiazheng"][i]+"</a>";
+								}
+								document.write(str);
+								</script>
+							</dd>
+						</dl>
+					</div>
+					<div class="onebox">
+						<h4>装修/维修黄页</h4>
+						<dl>
+							<dt>
+								<a href="">装修/装饰</a><span>>></span>
+								<a href="">建材</a><span>>></span>
+								<a href=""><img src="imgs/good1.jpg" alt=""></a>
+							</dt>
+							<dd>
+								<!-- <a href="">月嫂</a> -->
+								<script>
+								var str="";
+								for(var i in arr["jiazheng"]){
+									str+="<a href=\"\">"+arr["jiazheng"][i]+"</a>";
+								}
+								document.write(str);
+								</script>
+							</dd>
+						</dl>
+						<dl>
+							<dt>
+								<a href="">家居维修/拆装</a><span>>></span>
+							</dt>
+							<dd>
+								<!-- <a href="">月嫂</a> -->
+								<script>
+								var str="";
+								for(var i in arr["jiazheng"]){
+									str+="<a href=\"\">"+arr["jiazheng"][i]+"</a>";
+								}
+								document.write(str);
+								</script>
+							</dd>
+						</dl>
+						<dl>
+							<dt>
+								<a href="">家电/空调维修</a><span>>></span>
+							</dt>
+							<dd>
+								<!-- <a href="">月嫂</a> -->
+								<script>
+								var str="";
+								for(var i in arr["jiazheng"]){
+									str+="<a href=\"\">"+arr["jiazheng"][i]+"</a>";
+								}
+								document.write(str);
+								</script>
+							</dd>
+						</dl>
+						<dl>
+							<dt>
+								<a href="">电脑维修</a><span>>></span>
+							</dt>
+							<dd>
+								<!-- <a href="">月嫂</a> -->
+								<script>
+								var str="";
+								for(var i in arr["jiazheng"]){
+									str+="<a href=\"\">"+arr["jiazheng"][i]+"</a>";
+								}
+								document.write(str);
+								</script>
+							</dd>
+						</dl>
+						<dl>
+							<dt>
+								<a href="">台式电脑</a><span>>></span>
+							</dt>
+						</dl>
+						<dl>
+							<dt>
+								<a href="">手机/数码维修</a><span>>></span>
+							</dt>
+							<dd>
+								<!-- <a href="">月嫂</a> -->
+								<script>
+								var str="";
+								for(var i in arr["jiazheng"]){
+									str+="<a href=\"\">"+arr["jiazheng"][i]+"</a>";
+								}
+								document.write(str);
+								</script>
+							</dd>
+						</dl>
+						<dl>
+							<dt>
+								<a href="">管道疏通/打孔</a><span>>></span>
+							</dt>
+							<dd>
+								<!-- <a href="">月嫂</a> -->
+								<script>
+								var str="";
+								for(var i in arr["jiazheng"]){
+									str+="<a href=\"\">"+arr["jiazheng"][i]+"</a>";
+								}
+								document.write(str);
+								</script>
+							</dd>
+						</dl>
+					</div>
+					<div class="onebox">
+						<h4>汽车相关服务</h4>
+						<dl>
+							<dt>
+								<a href="">租车</a><span>>></span>
+							</dt>
+							<dd>
+								<!-- <a href="">月嫂</a> -->
+								<script>
+								var str="";
+								for(var i in arr["jiazheng"]){
+									str+="<a href=\"\">"+arr["jiazheng"][i]+"</a>";
+								}
+								document.write(str);
+								</script>
+							</dd>
+						</dl>
+						<dl>
+							<dt>
+								<a href="">代驾/司机</a><span>>></span>
+							</dt>
+							<dd>
+								<!-- <a href="">月嫂</a> -->
+								<script>
+								var str="";
+								for(var i in arr["jiazheng"]){
+									str+="<a href=\"\">"+arr["jiazheng"][i]+"</a>";
+								}
+								document.write(str);
+								</script>
+							</dd>
+						</dl>
+						<dl>
+							<dt>
+								<a href="">汽修/保养</a><span>>></span>
+							</dt>
+							<dd>
+								<!-- <a href="">月嫂</a> -->
+								<script>
+								var str="";
+								for(var i in arr["jiazheng"]){
+									str+="<a href=\"\">"+arr["jiazheng"][i]+"</a>";
+								}
+								document.write(str);
+								</script>
+							</dd>
+						</dl>
+						<dl>
+							<dt>
+								<a href="">汽车陪练</a><span>>></span>
+								<a href="">驾校</a><span>>></span></a>
+							</dt>
+						</dl>
+						<dl>
+							<dt>
+								<a href="">汽车年检</a><span>>></span>
+								<a href="">过户上牌</a><span>>></span></a>
+							</dt>
+							<dd>
+								<a href="">异地验车</a>
+								<a href="">外迁提档</a>
+							</dd>
+						</dl>
+						<dl>
+							<dt>
+								<a href="">加油加气站</a><span>>></span>
+							</dt>
+							<dd>
+								<!-- <a href="">月嫂</a> -->
+								<script>
+								var str="";
+								for(var i in arr["jiazheng"]){
+									str+="<a href=\"\">"+arr["jiazheng"][i]+"</a>";
+								}
+								document.write(str);
+								</script>
+							</dd>
+						</dl>
+						<dl>
+							<dt>
+								<a href="">交通车辆管理所</a><span>>></span>
+							</dt>
+							<dd>
+								<!-- <a href="">月嫂</a> -->
+								<script>
+								var str="";
+								for(var i in arr["jiazheng"]){
+									str+="<a href=\"\">"+arr["jiazheng"][i]+"</a>";
+								}
+								document.write(str);
+								</script>
+							</dd>
+						</dl>
+					</div>
+					<div class="line"></div>
+					<div class="twobox">
+						<div class="twobox-left">
+							<div class="twobox-left-top">
+								<h4>婚庆/摄影/出游</h4>
+								<dl>
+									<dt><a href="">婚庆典礼</a>
+									<span>>></span></dt>
+									<dd>
+										<script>
+											var str="";
+											for(var i in arr["hunli"]){
+												str+="<a href=\"\">"+arr["hunli"][i]+"</a>";
+											}
+											document.write(str);
+										</script>
+									</dd>
+								</dl>
+								<dl>
+									<dt><a href="">摄影冲印</a>
+									<span>>></span></dt>
+									<dd>
+										<script>
+											var str="";
+											for(var i in arr["hunli"]){
+												str+="<a href=\"\">"+arr["hunli"][i]+"</a>";
+											}
+											document.write(str);
+										</script>
+									</dd>
+								</dl>
+								<dl>
+									<dt><a href="">旅游度假</a>
+									<span>>></span></dt>
+									<dd>
+										<script>
+											var str="";
+											for(var i in arr["hunli"]){
+												str+="<a href=\"\">"+arr["hunli"][i]+"</a>";
+											}
+											document.write(str);
+										</script>
+									</dd>
+								</dl>
+								<dl>
+									<dt><a href="">机票/酒店</a>
+									<span>>></span></dt>
+									<dd>
+										<script>
+											var str="";
+											for(var i in arr["hunli"]){
+												str+="<a href=\"\">"+arr["hunli"][i]+"</a>";
+											}
+											document.write(str);
+										</script>
+									</dd>
+								</dl>
+								<dl>
+									<dt><a href="">保险</a>
+									<span>>></span></dt>
+									<dd>
+										<script>
+											var str="";
+											for(var i in arr["hunli"]){
+												str+="<a href=\"\">"+arr["hunli"][i]+"</a>";
+											}
+											document.write(str);
+										</script>
+									</dd>
+								</dl>
+								<div class="littleline"></div>
+							</div>
+							<div class="twobox-left-top">
+								<h4>休闲/健身/餐饮/保健/美容</h4>
+								<dl>
+									<dt><a href="">休闲娱乐</a>
+									<span>>></span></dt>
+									<dd>
+										<script>
+											var str="";
+											for(var i in arr["hunli"]){
+												str+="<a href=\"\">"+arr["hunli"][i]+"</a>";
+											}
+											document.write(str);
+										</script>
+									</dd>
+								</dl>
+								<dl>
+									<dt><a href="">运动健身</a>
+									<span>>></span></dt>
+									<dd>
+										<script>
+											var str="";
+											for(var i in arr["hunli"]){
+												str+="<a href=\"\">"+arr["hunli"][i]+"</a>";
+											}
+											document.write(str);
+										</script>
+									</dd>
+								</dl>
+								<dl>
+									<dt><a href="">餐饮美食</a>
+									<span>>></span></dt>
+									<dd>
+										<script>
+											var str="";
+											for(var i in arr["hunli"]){
+												str+="<a href=\"\">"+arr["hunli"][i]+"</a>";
+											}
+											document.write(str);
+										</script>
+									</dd>
+								</dl>
+								<dl>
+									<dt><a href="">养生保健</a>
+									<span>>></span></dt>
+									<dd>
+										<script>
+											var str="";
+											for(var i in arr["hunli"]){
+												str+="<a href=\"\">"+arr["hunli"][i]+"</a>";
+											}
+											document.write(str);
+										</script>
+									</dd>
+								</dl>
+								<dl>
+									<dt><a href="">美容美体</a>
+									<span>>></span></dt>
+									<dd>
+										<script>
+											var str="";
+											for(var i in arr["hunli"]){
+												str+="<a href=\"\">"+arr["hunli"][i]+"</a>";
+											}
+											document.write(str);
+										</script>
+									</dd>
+								</dl>
+							</div>
+
+						</div>
+						<div class="twobox-left">
+							<div class="twobox-left-top">
+								<h4>公司商务财税服务</h4>
+								<dl>
+									<dt><a href="">公司注册</a>
+									<span>>></span></dt>
+									<dd>
+										<script>
+											var str="";
+											for(var i in arr["hunli"]){
+												str+="<a href=\"\">"+arr["hunli"][i]+"</a>";
+											}
+											document.write(str);
+										</script>
+									</dd>
+								</dl>
+								<dl>
+									<dt><a href="">会计/审计/评估</a>
+									<span>>></span></dt>
+									<dd>
+										<script>
+											var str="";
+											for(var i in arr["hunli"]){
+												str+="<a href=\"\">"+arr["hunli"][i]+"</a>";
+											}
+											document.write(str);
+										</script>
+									</dd>
+								</dl>
+								<dl>
+									<dt><a href="">担保贷款</a>
+									<span>>></span></dt>
+									<dd>
+										<script>
+											var str="";
+											for(var i in arr["hunli"]){
+												str+="<a href=\"\">"+arr["hunli"][i]+"</a>";
+											}
+											document.write(str);
+										</script>
+									</dd>
+								</dl>
+								<dl>
+									<dt><a href="">典当融资</a>
+									<span>>></span></dt>
+									<dd>
+										<script>
+											var str="";
+											for(var i in arr["hunli"]){
+												str+="<a href=\"\">"+arr["hunli"][i]+"</a>";
+											}
+											document.write(str);
+										</script>
+									</dd>
+								</dl>
+								<dl>
+									<dt><a href="">建筑维修</a>
+									<span>>></span></dt>
+									<dd>
+										<script>
+											var str="";
+											for(var i in arr["hunli"]){
+												str+="<a href=\"\">"+arr["hunli"][i]+"</a>";
+											}
+											document.write(str);
+										</script>
+									</dd>
+								</dl>
+								<div class="littleline"></div>
+							</div>
+							<div class="twobox-left-top">
+								<h4>设计策划/展览展会</h4>
+								<dl>
+									<dt><a href="">设计策划</a>
+									<span>>></span></dt>
+									<dd>
+										<script>
+											var str="";
+											for(var i in arr["hunli"]){
+												str+="<a href=\"\">"+arr["hunli"][i]+"</a>";
+											}
+											document.write(str);
+										</script>
+									</dd>
+								</dl>
+								<dl>
+									<dt><a href="">展览/会展</a>
+									<span>>></span></dt>
+									<dd>
+										<script>
+											var str="";
+											for(var i in arr["hunli"]){
+												str+="<a href=\"\">"+arr["hunli"][i]+"</a>";
+											}
+											document.write(str);
+										</script>
+									</dd>
+								</dl>
+								<dl>
+									<dt><a href="">设备租赁维修</a>
+									<span>>></span></dt>
+									<dd>
+										<script>
+											var str="";
+											for(var i in arr["hunli"]){
+												str+="<a href=\"\">"+arr["hunli"][i]+"</a>";
+											}
+											document.write(str);
+										</script>
+									</dd>
+								</dl>
+							</div>
+							
+						</div>
+						<div class="twobox-left">
+							<div class="twobox-left-top">
+								<h4>网络建设相关服务</h4>
+								<dl>
+									<dt><a href="">网站建设</a>
+									<span>>></span></dt>
+									<dd>
+										<script>
+											var str="";
+											for(var i in arr["hunli"]){
+												str+="<a href=\"\">"+arr["hunli"][i]+"</a>";
+											}
+											document.write(str);
+										</script>
+									</dd>
+								</dl>
+								<dl>
+									<dt><a href="">网络布线/维护</a>
+									<span>>></span></dt>
+									<dd>
+										<script>
+											var str="";
+											for(var i in arr["hunli"]){
+												str+="<a href=\"\">"+arr["hunli"][i]+"</a>";
+											}
+											document.write(str);
+										</script>
+									</dd>
+								</dl>
+							</div>
+							<div class="twobox-left-top">
+								<h4>印刷喷绘制卡服务</h4>
+								<dl>
+									<dt><a href="">印刷</a>
+									<span>>></span>
+									<a href="">数码快印</a></dt>
+									<dd>
+										<script>
+											var str="";
+											for(var i in arr["hunli"]){
+												str+="<a href=\"\">"+arr["hunli"][i]+"</a>";
+											}
+											document.write(str);
+										</script>
+									</dd>
+								</dl>
+								<dl>
+									<dt><a href="">喷绘招牌/制卡</a>
+									<span>>></span></dt>
+									<dd>
+										<script>
+											var str="";
+											for(var i in arr["hunli"]){
+												str+="<a href=\"\">"+arr["hunli"][i]+"</a>";
+											}
+											document.write(str);
+										</script>
+									</dd>
+								</dl>
+							</div>
+							
+						</div>
+						<div class="twobox-right">
+							<div class="twobox-left-top">
+								<h4>生活信息大全</h4>
+								<dl>
+									<dt><a href="">银行</a>
+									<span>>></span></dt>
+									<dd>
+										<script>
+											var str="";
+											for(var i in arr["hunli"]){
+												str+="<a href=\"\">"+arr["hunli"][i]+"</a>";
+											}
+											document.write(str);
+										</script>
+									</dd>
+								</dl>
+								<dl>
+									<dt><a href="">电信/移动营业厅</a>
+									<span>>></span></dt>
+									<dd>
+										<script>
+											var str="";
+											for(var i in arr["hunli"]){
+												str+="<a href=\"\">"+arr["hunli"][i]+"</a>";
+											}
+											document.write(str);
+										</script>
+									</dd>
+								</dl>
+								<dl>
+									<dt><a href="">家电卖场</a>
+									<span>>></span></dt>
+									<dd>
+										<script>
+											var str="";
+											for(var i in arr["hunli"]){
+												str+="<a href=\"\">"+arr["hunli"][i]+"</a>";
+											}
+											document.write(str);
+										</script>
+									</dd>
+								</dl>
+								<dl>
+									<dt><a href="">商场/超市</a>
+									<span>>></span></dt>
+									<dd>
+										<script>
+											var str="";
+											for(var i in arr["hunli"]){
+												str+="<a href=\"\">"+arr["hunli"][i]+"</a>";
+											}
+											document.write(str);
+										</script>
+									</dd>
+								</dl>
+								<dl>
+									<dt><a href="">自来水/电营业厅</a>
+									<span>>></span></dt>
+									<dd>
+										<a href="">自来水营业厅</a>
+										<a href="">电力营业厅</a>
+									</dd>
+								</dl>
+								<dl>
+									<dt><a href="">邮局</a>
+									<span>>></span></dt>
+									<dd>
+										<a href="">邮政速递</a>
+									</dd>
+								</dl>
+								<dl>
+									<dt><a href="">医院</a>
+									<span>>></span>
+									<a href="">医药保健</a></dt>
+									<dd>
+										<script>
+											var str="";
+											for(var i in arr["hunli"]){
+												str+="<a href=\"\">"+arr["hunli"][i]+"</a>";
+											}
+											document.write(str);
+										</script>
+									</dd>
+								</dl>
+								<dl>
+									<dt><a href="">证券公司</a>
+									<span>>></span></dt>
+									<dd>
+										<script>
+											var str="";
+											for(var i in arr["hunli"]){
+												str+="<a href=\"\">"+arr["hunli"][i]+"</a>";
+											}
+											document.write(str);
+										</script>
+									</dd>
+								</dl>
+								<dl>
+									<dt><a href="">宾馆旅社</a>
+									<span>>></span></dt>
+									<dd>
+										<script>
+											var str="";
+											for(var i in arr["hunli"]){
+												str+="<a href=\"\">"+arr["hunli"][i]+"</a>";
+											}
+											document.write(str);
+										</script>
+									</dd>
+								</dl>
+								<dl>
+									<dt><a href="">工商税务</a>
+									<span>>></span></dt>
+									<dd>
+										<script>
+											var str="";
+											for(var i in arr["hunli"]){
+												str+="<a href=\"\">"+arr["hunli"][i]+"</a>";
+											}
+											document.write(str);
+										</script>
+									</dd>
+								</dl>
+								<dl>
+									<dt><a href="">加油加气站</a>
+									<span>>></span></dt>
+									<dd>
+										<script>
+											var str="";
+											for(var i in arr["hunli"]){
+												str+="<a href=\"\">"+arr["hunli"][i]+"</a>";
+											}
+											document.write(str);
+										</script>
+									</dd>
+								</dl>
+								<dl>
+									<dt><a href="">交通车辆管理所</a>
+									<span>>></span></dt>
+									<dd>
+										<script>
+											var str="";
+											for(var i in arr["hunli"]){
+												str+="<a href=\"\">"+arr["hunli"][i]+"</a>";
+											}
+											document.write(str);
+										</script>
+									</dd>
+								</dl>
+								<dl>
+									<dt><a href="">风水/起名</a>
+									<span>>></span></dt>
+									<dd>
+										<script>
+											var str="";
+											for(var i in arr["hunli"]){
+												str+="<a href=\"\">"+arr["hunli"][i]+"</a>";
+											}
+											document.write(str);
+										</script>
+									</dd>
+								</dl>
+								<dl>
+									<dt><a href="">殡葬/墓地</a>
+									<span>>></span>
+									<a href="">丧葬设施</a><span>>></span></dt>
+									<dd>
+										<script>
+											var str="";
+											for(var i in arr["hunli"]){
+												str+="<a href=\"\">"+arr["hunli"][i]+"</a>";
+											}
+											document.write(str);
+										</script>
+									</dd>
+								</dl>
+							</div>
+						</div>					
+					</div>
+					<div class="line"></div>
+					<div class="onebox">
+						<h4>食品批发相关</h4>
+						<dl>
+							<dt>
+								<a href="">食品批发</a><span>>></span>
+							</dt>
+							<dd>
+								<!-- <a href="">月嫂</a> -->
+								<script>
+								var str="";
+								for(var i in arr["jiazheng"]){
+									str+="<a href=\"\">"+arr["jiazheng"][i]+"</a>";
+								}
+								document.write(str);
+								</script>
+							</dd>
+						</dl>
+					</div>
+					<div class="onebox">
+						<h4>招商加盟相关服务</h4>
+						<dl>
+							<dt>
+								<a href="">招商加盟</a><span>>></span>
+							</dt>
+							<dd>
+								<!-- <a href="">月嫂</a> -->
+								<script>
+								var str="";
+								for(var i in arr["jiazheng"]){
+									str+="<a href=\"\">"+arr["jiazheng"][i]+"</a>";
+								}
+								document.write(str);
+								</script>
+							</dd>
+						</dl>
+					</div>
+					<div class="onebox">
+						<h4>其他本地商务服务</h4>
+						<dl>
+							<dt>
+								<a href="">二手回收</a><span>>></span>
+							</dt>
+							<dd>
+								<!-- <a href="">月嫂</a> -->
+								<script>
+								var str="";
+								for(var i in arr["jiazheng"]){
+									str+="<a href=\"\">"+arr["jiazheng"][i]+"</a>";
+								}
+								document.write(str);
+								</script>
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+	<div class="footer">
+		<ul class="listul" id="listul">
+			<li><a href="" class="check">租房</a></li>
+			<li><a href="">二手房</a></li>
+			<li><a href="">商铺</a></li>
+			<li><a href="">写字楼</a></li>
+			<li><a href="">仓库厂房</a></li>
+		</ul>
+		<div  id="xuan">
+			<ul class="xuan show">
+				<li class="xuanli xuanactive">
+					<span>热门区域 : </span>
+					<a href="">朝阳租房</a><a href="">海淀租房</a><a href="">东城租房</a><a href="">西城租房</a><a href="">丰台租房</a><a href="">通州租房</a><a href="">石景山租房</a><a href="">房山租房</a><a href="">昌平租房</a><a href="">大兴租房</a><a href="">顺义租房</a><a href="">密云租房</a><a href="">怀柔租房</a><a href="">延庆租房</a>
+				</li>
+				<li class="xuanli">
+					<span>热门价格 : </span>
+					<a href="">600元以下</a><a href="">600-1000元</a><a href="">1000-1500元</a><a href="">1500-2000元</a><a href="">2000-3000元</a><a href="">3000-5000元</a><a href="">5000-8000元</a><a href="">8000元以上</a>
+				</li>
+				<li class="xuanli">
+					<span>热门地铁 : </span>
+					<a href="">1号线</a><a href="">2号线</a><a href="">4号线</a><a href="">5号线</a><a href="">6号线</a><a href="">7号线</a><a href="">8号线</a><a href="">9号线</a><a href="">10号线</a><a href="">13号线</a><a href="">14号线(东)</a>
+				</li>
+			</ul>
+			<ul class="xuan">
+				<li class="xuanli ">
+					<span>价格筛选 : </span>
+					<a href="">200万以下</a><a href="">200-250万</a><a href="">250-300万</a><a href="">300-350万</a><a href="">350-400万</a><a href="">400-500万</a><a href="">500-700万</a><a href="">700-1000万</a>
+				</li>
+				<li class="xuanli">
+					<span>热门区域 : </span>
+					<a href="">朝阳租房</a><a href="">海淀租房</a><a href="">东城租房</a><a href="">西城租房</a><a href="">丰台租房</a><a href="">通州租房</a><a href="">石景山租房</a><a href="">房山租房</a><a href="">昌平租房</a><a href="">大兴租房</a><a href="">顺义租房</a><a href="">密云租房</a><a href="">怀柔租房</a><a href="">延庆租房</a>
+				</li>
+				<li class="xuanli">
+					<span>热门地铁 : </span>
+					<a href="">1号线</a><a href="">2号线</a><a href="">4号线</a><a href="">5号线</a><a href="">6号线</a><a href="">7号线</a><a href="">8号线</a><a href="">9号线</a><a href="">10号线</a><a href="">13号线</a><a href="">14号线(东)</a>
+				</li>
+			</ul>
+			<ul class="xuan">
+				<li class="xuanli ">
+					<span>热门区域 : </span>
+					<a href="">朝阳商铺</a><a href="">海淀商铺</a><a href="">东城商铺</a><a href="">西城商铺</a><a href="">丰台商铺</a><a href="">通州商铺</a><a href="">石景山商铺</a><a href="">房山商铺</a><a href="">昌平商铺</a><a href="">大兴商铺</a><a href="">顺义商铺</a><a href="">密云商铺</a><a href="">怀柔商铺</a><a href="">延庆商铺</a>
+				</li>
+				<li class="xuanli">
+					<span>类型 : </span>
+					<a href="">商业街商铺</a><a href="">写字楼配套</a><a href="">社区底商</a><a href="">档口摊位</a><a href="">其他</a><a href="">临街门面</a><a href="">购物百货中心</a>
+				</li>
+			</ul>
+			<ul class="xuan">
+				<li class="xuanli ">
+					<span>热门区域 : </span>
+					<a href="">朝阳写字楼</a><a href="">海淀写字楼</a><a href="">东城写字楼</a><a href="">西城写字楼</a><a href="">丰台写字楼</a><a href="">通州写字楼</a><a href="">石景山写字楼</a><a href="">房山写字楼</a><a href="">昌平写字楼</a><a href="">大兴写字楼</a><a href="">顺义写字楼</a><a href="">密云写字楼</a><a href="">怀柔写字楼</a><a href="">延庆写字楼</a>
+				</li>
+				<li class="xuanli">
+					<span>热门类型 : </span>
+					<a href="">纯写字楼</a><a href="">商业综合体</a><a href="">商务公寓</a><a href="">商务酒店</a>
+				</li>
+			</ul>
+			<ul class="xuan">
+				<li class="xuanli ">
+					<span>热门区域 : </span>
+					<a href="">朝阳仓库厂房</a><a href="">海淀仓库厂房</a><a href="">东城仓库厂房</a><a href="">西城仓库厂房</a><a href="">丰台仓库厂房</a><a href="">通州仓库厂房</a><a href="">昌平仓库厂房</a><a href="">大兴仓库厂房</a><a href="">顺义仓库厂房</a><a href="">密云仓库厂房</a><a href="">怀柔仓库厂房</a><a href="">延庆仓库厂房</a>
+				</li>
+				<li class="xuanli">
+					<span>热门类型 : </span>
+					<a href="">厂房</a><a href="">车位</a><a href="">土地</a><a href="">仓库</a>
+				</li>
+			</ul>
+		</div>
+		<ul class="wei">
+			<li>
+				<a href="">关于Ganji</a>-
+				<a href="">赶集推广</a>-
+				<a href="">渠道合作</a>-
+				<a href="">帮助中心</a>-
+				<a href="">手机号被冒用</a>-
+				<a href="">友情链接</a>-
+				<a href="">招贤纳士</a>-
+				<a href="">区县导航</a>-
+				<a href="">手机赶集</a>-
+				<a href="">租房极速版</a>-
+				<a href="">租房触屏版</a>
+			</li>
+		</ul>
+	</div>
+	</div>
+	<div class="fanhui">
+		<div class="fanhuibox">
+			<a href="" class="fhdb"><img src="imgs/fanhui_0.jpg" alt="">
+				<span>返回顶端</span>
+			</a>
+			<a href="" class="yjfk"><img src="imgs/fanhui_1.jpg" alt="">
+			<span>意见反馈</span></a>
+		</div>
+	</div>
+	<script>
+		$(document).ready(function(){
+			$(window).scroll(function(){
+				if($(window).scrollTop()>$("#header").height()+$("#head-cont").height()){
+					$(".yinhead-cont").show();
+				}else{
+					$(".yinhead-cont").hide();
+				}
+			})
+		})
+	</script>
+</body>
+</html>
