@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/index.css">
+	<title>赶集网</title>
+	<script src="js/home.js"></script>
+	<script src="js/list.js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/lun.js"></script>
+</head>
+<body>
+	<div id="wrap">
+		<div id="header">
+			<div id="city">
+				<a href="" class="city">北京</a>
+				<a href="" class="qiehuan">[切换城市]</a>
+			</div>
+			<div id="weather">
+				<div class="weather">
+					<img src="imgs/sun.png" alt="" id="pic">
+					<span>晴</span>
+					<span>13 ~ 27℃</span>
+					<span>优</span>
+				</div>
+				<div class="yin_weather">
+					<p class="yin_weather-title">
+						<span>今日北京空气指数:<em>88</em></span>
+						<a href="">查看一周天气情况 ></a>
+					</p>
+					<ul>
+						<li>
+							<p class="we_time">今天(周五)</p>
+							<p class="we_con">
+								<img src="imgs/sunbig.png" alt="">
+								<span>18 ~ 35℃</span><br/>
+								晴<br />南风3-4级<br />尾号限行49
+							</p>
+						</li>
+						<li>
+							<p class="we_time">今天(周五)</p>
+							<p class="we_con">
+								<img src="imgs/sunbig.png" alt="">
+								<span>18 ~ 35℃</span><br/>
+								晴<br />南风3-4级<br />尾号限行49
+							</p>
+						</li>
+						<li>
+							<p class="we_time">今天(周五)</p>
+							<p class="we_con">
+								<img src="imgs/sunbig.png" alt="">
+								<span>18 ~ 35℃</span><br/>
+								晴<br />南风3-4级<br />尾号限行49
+							</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="webinfo">
+			<span class="hotkuan">热</span>
+				<dl>
+					<dt><a href="">房产</a></dt>
+					<dd><a href="">租房</a></dd>
+					<dd><a href="">二手房</a></dd>
+					<dd><a href="">商铺</a></dd>
+					<dd><a href="">写字楼</a></dd>
+				</dl>
+				<dl>
+					<dt><a href="">招聘</a></dt>
+					<dd><a href="">全职</a></dd>
+					<dd><a href="">兼职</a></dd>
+					<dd><a href="">高薪</a></dd>
+					<dd><a href="">简历库</a></dd>
+				</dl>
+				<dl>
+					<dt><a href="">二手物品</a></dt>
+					<dd><a href="">手机</a></dd>
+					<dd><a href="">笔记本</a></dd>
+					<dd><a href="">家具</a></dd>
+					<dd><a href="">家电</a></dd>
+				</dl>
+				<dl>
+					<dt><a href="">车辆买卖</a></dt>
+					<dd><a href="">二手车</a></dd>
+					<dd><a href="">新车</a></dd>
+					<dd><a href="">工程车</a></dd>
+					<dd><a href="">摩托车</a></dd>
+				</dl>
+				<dl>
+					<dt><a href="">宠物</a></dt>
+					<dd><a href="">宠物狗</a></dd>
+					<dd><a href="">宠物猫</a></dd>
+					<dd><a href="">花鸟鱼虫</a></dd>
+					<dd><a href="">宠物服务</a></dd>
+				</dl>
+				<dl>
+					<dt><a href="">票务</a></dt>
+					<dd><a href="">电影票</a></dd>
+					<dd><a href="">演出票</a></dd>
+				</dl>
+				<dl style="width:110px;">
+					<dt><a href="">生活服务</a></dt>
+					<dd><a href="">保姆</a>|<a href="">快递</a></dd>
+					<dd><a href="">月嫂</a>|<a href="">维修</a></dd>
+					<dd><a href="">保洁</a>|<a href="">开锁</a></dd>
+					<dd><a href="">搬家</a>|<a href="">装修</a></dd>
+				</dl>
+				<dl style="width:144px;">
+					<dt><a href="">商务服务</a></dt>
+					<dd><a href="">公司注册</a>|<a href="">投资理财</a></dd>
+					<dd><a href="">网站建设</a>|<a href="">网络维护</a></dd>
+					<dd><a href="">设备租赁</a>|<a href="">设计策划</a></dd>
+					<dd><a href="">印刷包装</a>|<a href="">数码快印</a></dd>
+				</dl>
+				<dl>
+					<dt><a href="">教育培训</a></dt>
+					<dd><a href="">职业培训</a></dd>
+					<dd><a href="">外语培训</a></dd>
+					<dd><a href="">学历培训</a></dd>
+				</dl>
+				<dl class="erweimadl">
+					<dt><a href="">精彩推荐</a></dt>
+					<dd><img src="imgs/erweimadl.png" alt="">赶集网App</dd>
+					<dd><img src="imgs/erweimadl.png" alt="">赶集网App</dd>
+					<dd><img src="imgs/erweimadl.png" alt="">赶集网App</dd>
+				</dl>
+			</div>
+			<div id="gr">
+				<a href="" class="grcon">我的发布</a>
+				<a href="" class="grcon">我的收藏</a>
+				<a href="" class="grcon">我的求职</a>
+				<a href="" class="grcon">我的招聘</a>
+				<a href="" class="grcon">账户余额</a>
+			</div>
+			<div id="header_right">
+				<ul id="conRight-list">
+					<li ><a href="">登录 / 注册</a></li>
+					<li  id="geren"><a href="">个人中心</a>&nbsp;<img src="imgs/xl.jpg" alt=""></li>
+					<li ><a href="">手机上赶集</a>
+					<li ><a href="">帮助中心</a>
+					<li id="daohang"><a href="">网站导航</a>&nbsp;<img src="imgs/xl.jpg" alt=""></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="nav">
+		<div id="nav-header">
+			<div class="logobox"><img src="imgs/logo.jpg" alt="" id="logo"><img src="imgs/logolittle.png" alt="" id="logoli"></div>
+			<div id="search">
+				<form action="">
+				<img src="imgs/sear.jpg" alt="" id="sear">
+					<input type="text" id="text" placeholder="搜索房子／工作／二手物品">
+					<input type="submit" value="搜索" id="sub">
+				</form> 
+				<p id="search-bottom">
+					<a href="">高薪工作 </a>
+					<a href="">二手好车</a>
+					<a href="" class="act">赶集APP</a>
+					<a href="">特价房源</a>
+					<a href="">小本创业</a>
+				</p>
+			</div>
+			<div id="nav-header-right">
+				<a href="" id="news">免费发布信息</a>
+				<a href="" id="xiugai">修改/删除信息</a>
+			</div>
+		</div>
+		<div id="nav-con">
+			<div id="con-tab-left">
+				<!-- <dl class="tab-left-con">
+					<dt class="dt">
+						<a href="">
+							<span>工作</span>
+							<img src="imgs/tab_0.jpg" alt="" class="dt_img">
+						</a>
+					</dt>
+					<dd class="dd">
+					<a href="">全职</a>
+					<a href="">兼职</a>
+					</dd>
+				</dl> -->
+				<script>
+					var str="";
+					for(var k in arr["tab"]){
+						str +="<dl class=\"tab-left-con\">";
+						str +="<dt class=\"dt\">";
+						str +="<a href=\""+arr["tab"][k][5]+"\">";
+						str +="<span>"+arr["tab"][k][0]+"</span>";
+						str +="<img src='"+arr["tab"][k][1]+"' alt=\"\" class=\"dt_img\">";
+						str +="</a>";
+						str +="</dt>";
+						str +="<dd class=\"dd\">";
+						str+="<a href=\"zhaopin.html\">"+arr["tab"][k][2]+"</a>";
+						str+="<a href=\"\">"+arr["tab"][k][3]+"</a>";
+						str+="<a href=\"\">"+arr["tab"][k][4]+"</a>";
+						str+="</dd>";
+						str+="</dl>";
+					}
+					document.write(str); 
+				</script>
+			</div>
+			<div id="con-tab-right">
+				<div id="tab-right-con">
+					<div id="right-con-top">更多精彩尽在赶集App
+					<div id="right-con-topimg"></div>
+					</div>
+					<div id="box">
+						<div class="inner">
+							<ul class="ul">
+								<li><a href="#"><img src="imgs/lun_0.jpg" alt=""></a></li>
+								<li><a href="#"><img src="imgs/lun_1.jpg" alt=""></a></li>
+								<li><a href="#"><img src="imgs/lun_1.jpg" alt=""></a></li>
+								<li><a href="#"><img src="imgs/lun_1.jpg" alt=""></a></li>
+							</ul>
+						<div id="arr">
+							<span id="left"> < </span>
+							<span id="right"> > </span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="nav-cont">
+			<div class="col col1">
+				<div class="house">
+						<h2 class="listtitle">
+							<a href="" class="listtitle-left">北京房产</a>
+							<span class="listtitle-right">个人房源</span>
+						</h2>
+						<!-- <span class="listcontent"><a href="">租房</a></span> -->
+						<script type="text/javascript">
+						var str="";
+						for(var k in arr["listcontent1"]){
+							str+="<span class=\"listcontent\"><a href=\"three.html\">"+arr["listcontent1"][k]+"</a></span>";
+						}
+						document.write(str);
+						</script>
+				</div>
+				<!-- <img src="imgs/adv.jpg" alt="" class="adv"> -->
+				<div class="adv"></div>
+				<div class="car">
+						<h2 class="listtitle">
+							<a href="" class="listtitle-left">二手车</a>
+							<span class="listtitle-right">免费估价</span>
+						</h2>
+						<!-- <span class="listcontent"><a href="">租房</a></span> -->
+						<script type="text/javascript">
+						var str="";
+						for(var k in arr["listcontent2"]){
+							str+="<span class=\"listcontent\"><a href=\"\">"+arr["listcontent2"][k]+"</a></span>";
+						}
+						document.write(str);
+						</script>
+				</div>
+				<div class="newcar">
+						<h2 class="listtitle">
+							<a href="" class="listtitle-left">新车</a>
+							<span class="listtitle-right">品牌选车</span>
+						</h2>
+						<!-- <span class="listcontent"><a href="">租房</a></span> -->
+						<script type="text/javascript">
+						var str="";
+						for(var k in arr["listcontent3"]){
+							str+="<span class=\"listcontent\"><a href=\"\">"+arr["listcontent3"][k]+"</a></span>";
+						}
+						document.write(str);
+						</script>
+				</div>
+				<div class="newcar">
+						<h2 class="listtitle">
+							<a href="" class="listtitle-left">汽车服务</a>
+							<span class="listtitle-right">免费办进京证</span>
+						</h2>
+						<!-- <span class="listcontent"><a href="">租房</a></span> -->
+						<script type="text/javascript">
+						var str="";
+						for(var k in arr["listcontent4"]){
+							str+="<span class=\"listcontent\"><a href=\"\">"+arr["listcontent4"][k]+"</a></span>";
+						}
+						document.write(str);
+						</script>
+				</div>
+				<div class="zhaoshang">
+						<h2 class="listtitle">
+							<a href="" class="listtitle-left">招商加盟</a>
+							<span class="listtitle-right">开小店赚大钱</span>
+						</h2>
+						<!-- <span class="listcontent"><a href="">租房</a></span> -->
+						<script type="text/javascript">
+						var str="";
+						for(var k in arr["listcontent5"]){
+							str+="<span class=\"listcontent\"><a href=\"\">"+arr["listcontent5"][k]+"</a></span>";
+						}
+						document.write(str);
+						</script>
+				</div>
+			</div>
+			<div class="col col2">
+				<div class="zhaopin">
+						<h2 class="listtitle1">
+							<a href="" class="listtitle-left">北京招聘</a>
+							<span class="listtitle-right">非你莫属</span>
+						</h2>
+						<!-- <span class="listcontent"><a href="">租房</a></span> -->
+						<script type="text/javascript">
+						var str="";
+						for(var k in arr["listcontent6"]){
+							str+="<span class=\"listcontent\"><a href=\"\">"+arr["listcontent6"][k]+"</a></span>";
+						}
+						document.write(str);
+						</script>
+					<div class="newheight">
+						<div class="littlebox">
+							<h4>
+								<span>热门职位</span>
+							</h4>
+							<div class="littlecontent">
+								<script type="text/javascript">
+									var str="";
+									for(var k in arr["listcontent7"]){
+										str+="<span class=\"listcontent\"><a href=\"\">"+arr["listcontent7"][k]+"</a></span>";
+									}
+									document.write(str);
+								</script>
+							</div>
+							<h4>
+								<span>入门快 挣钱快</span>
+							</h4>
+							<div class="littlecontent">
+								<script type="text/javascript">
+									var str="";
+									for(var k in arr["listcontent9"]){
+										str+="<span class=\"listcontent\"><a href=\"\">"+arr["listcontent9"][k]+"</a></span>";
+									}
+									document.write(str);
+								</script>
+							</div>
+							<h4>
+								<span>轻白领 办公族</span>
+							</h4>
+							<div class="littlecontent">
+								<script type="text/javascript">
+									var str="";
+									for(var k in arr["listcontent11"]){
+										str+="<span class=\"listcontent\"><a href=\"\">"+arr["listcontent11"][k]+"</a></span>";
+									}
+									document.write(str);
+								</script>
+							</div>
+							<h4>
+								<span>财会 教师 司机</span>
+							</h4>
+							<div class="littlecontent">
+								<script type="text/javascript">
+									var str="";
+									for(var k in arr["listcontent13"]){
+										str+="<span class=\"listcontent\"><a href=\"\">"+arr["listcontent13"][k]+"</a></span>";
+									}
+									document.write(str);
+								</script>
+							</div>
+
+						</div>
+						<div class="littlebox1">
+							<h4>
+								<span>手艺巧 工资高</span>
+							</h4>
+							<div class="littlecontent1">
+								<script type="text/javascript">
+									var str="";
+									for(var k in arr["listcontent8"]){
+										str+="<span class=\"listcontent\"><a href=\"\">"+arr["listcontent8"][k]+"</a></span>";
+									}
+									document.write(str);
+								</script>
+							</div>
+							<h4>
+								<span>电商IT 技术宅</span>
+							</h4>
+							<div class="littlecontent1">
+								<script type="text/javascript">
+									var str="";
+									for(var k in arr["listcontent10"]){
+										str+="<span class=\"listcontent\"><a href=\"\">"+arr["listcontent10"][k]+"</a></span>";
+									}
+									document.write(str);
+								</script>
+							</div>
+							<h4>
+								<span>美食多 服务好</span>
+							</h4>
+							<div class="littlecontent1">
+								<script type="text/javascript">
+									var str="";
+									for(var k in arr["listcontent12"]){
+										str+="<span class=\"listcontent\"><a href=\"\">"+arr["listcontent12"][k]+"</a></span>";
+									}
+									document.write(str);
+								</script>
+							</div>
+							<h4>
+								<span>金融 媒体 物流</span>
+							</h4>
+							<div class="littlecontent1">
+								<script type="text/javascript">
+									var str="";
+									for(var k in arr["listcontent14"]){
+										str+="<span class=\"listcontent\"><a href=\"\">"+arr["listcontent14"][k]+"</a></span>";
+									}
+									document.write(str);
+								</script>
+							</div>
+						</div>
+					</div>
+					<div class="jiaheight">
+						<div class="jiaheight-left">
+							<h2 class="new-listtitle">
+								<a href="" class="listtitle-left">兼职工作</a>
+								<span class="listtitle-right">放心兼职</span>
+							</h2>
+							<div class="jiaheight-left-con">
+								<script type="text/javascript">
+									var str="";
+									for(var k in arr["listcontent15"]){
+										str+="<span class=\"listcontent\"><a href=\"\">"+arr["listcontent15"][k]+"</a></span>";
+									}
+									document.write(str);
+								</script>
+							</div>
+						</div>
+						<div class="jiaheight-right">
+							<h2 class="new-listtitle">
+								<a href="" class="listtitle-left">求职简历</a>
+								<span class="listtitle-right">简历搜索</span>
+							</h2>
+							<div class="jiaheight-left-con">
+								<script type="text/javascript">
+									var str="";
+									for(var k in arr["listcontent16"]){
+										str+="<span class=\"listcontent1\"><a href=\"\">"+arr["listcontent16"][k]+"</a></span>";
+									}
+									document.write(str);
+								</script>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="shichang">
+						<h2 class="listtitle1">
+							<a href="" class="listtitle-left">二手市场</a>
+							<span class="listtitle-right">摩托车卖场</span>
+						</h2>
+							<script type="text/javascript">
+							var str="";
+							for(var k in arr["listcontent17"]){
+								str+="<span class=\"listcontent\"><a href=\"\">"+arr["listcontent17"][k]+"</a></span>";
+							}
+							document.write(str);
+							</script>
+						<div class="newheight">
+							<div class="littlebox">
+								<h4>
+									<span>数码通讯</span>
+								</h4>
+								<div class="littlecontent">
+									<script type="text/javascript">
+										var str="";
+										for(var k in arr["listcontent18"]){
+											str+="<span class=\"listcontent\"><a href=\"\">"+arr["listcontent18"][k]+"</a></span>";
+										}
+										document.write(str);
+									</script>
+								</div>
+								<h4>
+									<span>家具/家电/百货/礼品</span>
+								</h4>
+								<div class="littlecontent">
+									<script type="text/javascript">
+										var str="";
+										for(var k in arr["listcontent21"]){
+											str+="<span class=\"listcontent\"><a href=\"\">"+arr["listcontent21"][k]+"</a></span>";
+										}
+										document.write(str);
+									</script>
+								</div>
+							</div>
+							<div class="littlebox1">
+								<h4>
+									<span>车辆</span>
+								</h4>
+								<div class="littlecontent2">
+									<script type="text/javascript">
+										var str="";
+										for(var k in arr["listcontent19"]){
+											str+="<span class=\"listcontent\"><a href=\"\">"+arr["listcontent19"][k]+"</a></span>";
+										}
+										document.write(str);
+									</script>
+								</div>
+								<h4>
+									<span>办公/设备</span>
+								</h4>
+								<div class="littlecontent2">
+									<script type="text/javascript">
+										var str="";
+										for(var k in arr["listcontent20"]){
+											str+="<span class=\"listcontent\"><a href=\"\">"+arr["listcontent20"][k]+"</a></span>";
+										}
+										document.write(str);
+									</script>
+								</div>
+								<h3>
+									<a href="" class="listtitle-left">物品回收</a>
+								</h3>
+								<div class="littlecontent1">
+									<script type="text/javascript">
+										var str="";
+										for(var k in arr["listcontent22"]){
+											str+="<span class=\"listcontent\"><a href=\"\">"+arr["listcontent22"][k]+"</a></span>";
+										}
+										document.write(str);
+									</script>
+								</div>
+							</div>
+						</div>
+				</div> 
+				<div class="chongwu">
+					<h2 class="listtitle3">
+								<a href="" class="listtitle-left">宠物</a>
+								<span class="listtitle-right">买狗防骗指南</span>
+					</h2>
+					<div class="littlecontent1">
+									<script type="text/javascript">
+										var str="";
+										for(var k in arr["listcontent22"]){
+											str+="<span class=\"listcontent\"><a href=\"\">"+arr["listcontent22"][k]+"</a></span>";
+										}
+										document.write(str);
+									</script>
+					</div>
+				</div>
+				<div class="piaowu">
+						<h2 class="listtitle4">
+								<a href="" class="listtitle-left">票务卡券</a>
+								<span class="listtitle-right">火车票查询</span>
+						</h2>
+						<div class="littlecontent1">
+									<script type="text/javascript">
+										var str="";
+										for(var k in arr["listcontent22"]){
+											str+="<span class=\"listcontent\"><a href=\"\">"+arr["listcontent22"][k]+"</a></span>";
+										}
+										document.write(str);
+									</script>
+						</div>
+				</div>
+		</div>
+		<div class="col col4">
+				<div class="wrap">
+					<h2 class="listtitle5">
+						<a href="" class="listtitle-left">家庭上门服务</a>
+					</h2>
+						<ol id="yuan">
+							<li class="xuanyuan"></li>
+							<li></li>
+						</ol>
+					<div id="listwrap">
+						<div class="list">
+								<!-- <a href="" class="listpic">
+									<img src="imgs/banjia.png" alt="">
+									<span>搬家</span>
+								</a> -->
+								<script>
+								var str="";
+								for(var i in arr["ico"]){
+									str+="<a href=\"\" class=\"listpic\">";
+									str+="<img src='"+arr["ico"][i][0]+"' alt=\"\">";
+									str+="<span>"+arr["ico"][i][1]+"</span>";
+									str+="</a>";
+								}
+								document.write(str);
+								</script>
+						</div>
+						<div id="button">
+									<span id="buttonleft"><</span>
+									<span id="buttonright">></span>
+						</div>
+
+					</div>
+				</div>
+				<div class="wrap-con1">
+					<h3>
+						<a href="">本地生活服务</a>
+					</h3>
+					<div class="littlecontent1">
+						<script type="text/javascript">
+										var str="";
+										for(var k in arr["listcontent16"]){
+											str+="<span class=\"listcontent\"><a href=\"\">"+arr["listcontent16"][k]+"</a></span>";
+										}
+										document.write(str);
+						</script>
+					</div>
+					<h3>
+						<a href="">装修建材</a>
+					</h3>
+					<div class="littlecontent1">
+						<script type="text/javascript">
+										var str="";
+										for(var k in arr["listcontent16"]){
+											str+="<span class=\"listcontent\"><a href=\"\">"+arr["listcontent16"][k]+"</a></span>";
+										}
+										document.write(str);
+						</script>
+					</div>
+					<h3>
+						<a href="">旅游休闲</a>
+					</h3>
+					<div class="littlecontent1">
+						<script type="text/javascript">
+										var str="";
+										for(var k in arr["listcontent16"]){
+											str+="<span class=\"listcontent\"><a href=\"\">"+arr["listcontent16"][k]+"</a></span>";
+										}
+										document.write(str);
+						</script>
+					</div>
+				</div>
+
+		</div>
+		<img src="imgs/bigadv.jpg" alt="" class="bigadv">
+				<div class="wrap-con2">
+					<h3>
+						<a href="">本地生活服务</a>
+					</h3>
+					<div class="littlecontent1">
+						<script type="text/javascript">
+										var str="";
+										for(var k in arr["listcontent16"]){
+											str+="<span class=\"listcontent\"><a href=\"\">"+arr["listcontent16"][k]+"</a></span>";
+										}
+										document.write(str);
+						</script>
+					</div>
+				</div>
+				<div class="wrap-con2">
+					<h3>
+						<a href="">教育培训</a>
+					</h3>
+					<div class="littlecontent1">
+						<script type="text/javascript">
+										var str="";
+										for(var k in arr["listcontent16"]){
+											str+="<span class=\"listcontent\"><a href=\"\">"+arr["listcontent16"][k]+"</a></span>";
+										}
+										document.write(str);
+						</script>
+					</div>
+				</div>
+		<div class="ganji">
+			<div class="ganjicon con1">
+				<h2>赶集招标</h2>
+				<ul>
+					<!-- <li>
+						<a href=""><img src="imgs/biao_0.jpg" alt="">
+						<span>家庭保洁</span></a>
+					</li> -->
+					<script>
+					var str="";
+					for(var i in arr["biao"]){
+						str+="<li>";
+						str+="<a href=\"\"><img src=\""+arr["biao"][i][0]+"\" alt=\"\">";
+						str+="<span>"+arr["biao"][i][1]+"</span></a>";
+						str+="</li>";
+					}
+					document.write(str);
+					</script>
+				</ul>
+			</div>
+			<div class="ganjicon con2">
+				<h2>生活助手</h2>
+				<ul>
+					<!-- <li>
+						<a href=""><img src="imgs/biao_0.jpg" alt="">
+						<span>家庭保洁</span></a>
+					</li> -->
+					<script>
+					var str="";
+					for(var i in arr["sheng"]){
+						str+="<li>";
+						str+="<a href=\"\"><img src=\""+arr["sheng"][i][0]+"\" alt=\"\">";
+						str+="<span>"+arr["sheng"][i][1]+"</span></a>";
+						str+="</li>";
+					}
+					document.write(str);
+					</script>
+				</ul>
+			</div>
+			<div class="ganjicon con3">
+				<h2>应用中心</h2>
+				<ul>
+					<!-- <li>
+						<a href=""><img src="imgs/biao_0.jpg" alt="">
+						<span>家庭保洁</span></a>
+					</li> -->
+					<script>
+					var str="";
+					for(var i in arr["ying"]){
+						str+="<li>";
+						str+="<a href=\"\"><img src=\""+arr["ying"][i][0]+"\" alt=\"\">";
+						str+="<span>"+arr["ying"][i][1]+"</span></a>";
+						str+="</li>";
+					}
+					document.write(str);
+					</script>
+				</ul>
+			</div>
+		</div>
+	
+	</div>
+	<div id="footer">
+		<div class="footerT">
+			<a href=""><img src="imgs/logo.jpg" alt="" class="footlogo"></a>
+			<dl class="dl">
+				<dt><a href="">关于赶集</a></dt>
+				<dd><a href="">公司简介</a></dd>
+				<dd><a href="">企业文化</a></dd>
+				<dd><a href="">隐私政策</a></dd>
+			</dl>
+			<dl class="dl">
+				<dt><a href="">网站合作</a></dt>
+				<dd><a href="">赶集推广</a></dd>
+				<dd><a href="">渠道招商</a></dd>
+			</dl>
+			<dl class="dl">
+				<dt><a href="">帮助中心</a></dt>
+				<dd><a href="">常见问题</a></dd>
+				<dd><a href="">求职指南</a></dd>
+				<dd><a href="">防骗指南</a></dd>
+			</dl>
+			<dl class="dl">
+				<dt><a href="">安全中心</a></dt>
+				<dd><a href="">账号登录</a></dd>
+				<dd><a href="">安全设置</a></dd>
+				<dd><a href="">手机号冒用</a></dd>
+			</dl>
+			<dl class="dl">
+				<dt><a href="">关注我们</a></dt>
+				<dd><a href="">新浪微博</a></dd>
+				<dd><a href="">官网微信</a></dd>
+			</dl>
+		</div>
+		<div class="footerB">
+			<p class="footerB-text">
+				<img src="imgs/beian.png" alt="">
+				<a href="">京公网备案信息：11010802026301</a>&nbsp;&nbsp;
+				<a href="">京ICP证110986号</a>&nbsp;&nbsp;
+				<a href="">京ICP备11045189</a>&nbsp;&nbsp;
+				<a href="">乙测资字1110849</a>&nbsp;&nbsp;
+				<a href="">人力资源服务许可证</a>&nbsp;&nbsp;违法信息举报4008180133&nbsp;&nbsp;  
+				<a href="">jbpt@58ganji.com</a>
+			</p>
+			<p class="footerB-pic">
+				<a href=""><img src="imgs/foot_0.jpg" alt="" width="125px"></a>
+				<a href=""><img src="imgs/foot_1.jpg" alt="" width="126px"></a>
+				<a href=""><img src="imgs/foot_2.jpg" alt="" width="166px"></a>
+			</p>
+		</div>
+	</div>
+	<div class="top-search">
+		<div class="top-searchCon">
+			<a href="" class="top-searchLogo">赶集网</a>
+			<div class="top-searchSear">
+				<form action="">
+					<img src="imgs/sear.jpg" alt="" class="sear">
+					<input type="text" class="text" placeholder="搜索房子／工作／二手物品">
+					<input type="submit" value="搜索" class="sub">
+				</form>
+			</div>
+			<div class="mianfei">
+				<a href="" class="mianfeinew">免费发布信息</a>
+			</div>
+		</div>
+	</div>
+	<div class="side">
+		<img src="imgs/xing.jpg" alt="" id="xing">
+		<img src="imgs/app.jpg" alt="" id="app">
+		<a href="#"><img src="imgs/top.jpg" alt="" id="fanhui"></a>
+	</div>
+	<script>
+		$(document).ready(function(){
+			$(window).scroll(function(){
+				if($(window).scrollTop()>$(window).height()){
+					$(".top-search").show();
+					$(".side a #fanhui").show();
+				}else{
+					$(".top-search").hide();
+					$(".side a #fanhui").hide();
+				}
+			}) 
+		}) 
+	</script>
+	<script>
+			var geren=document.getElementById("geren");
+			var daohang=document.getElementById("daohang");
+			var webinfo=document.getElementById("webinfo");
+			var gr=document.getElementById("gr");
+			geren.onmouseover=function(){
+				gr.style.display="block";
+				geren.style.background="#fff";
+				geren.style.border="1px solid #f5f5f5";
+				geren.style.borderBottom="1px solid transparent";
+				geren.style.borderTop="1px solid transparent";
+				gr.style.border="1px solid #f5f5f5";
+				gr.style.borderTop="1px solid transparent";
+			}
+			gr.onmouseover=function(){
+				geren.style.border="1px solid #f5f5f5";
+				geren.style.borderBottom="1px solid transparent";
+				geren.style.borderTop="1px solid transparent";
+				gr.style.display="block";
+				gr.style.color="#f5f5f5";
+			}
+			gr.onmouseout=function(){
+				gr.style.display="none";
+			}
+			geren.onmouseout=function(){
+				gr.style.display="none";
+				geren.style.background="";
+				geren.style.border="";
+			};
+			daohang.onmouseover=function(){
+				webinfo.style.display="block";
+				daohang.style.borderLeft="1px solid #f5f5f5";
+				daohang.style.borderRight="1px solid #f5f5f5";
+				webinfo.style.border="1px solid #f5f5f5";
+				webinfo.style.borderTop="1px solid transparent";
+			}
+			daohang.onmouseout=function(){
+				webinfo.style.display="none";
+				daohang.style.borderLeft="1px solid transparent";
+				daohang.style.borderRight="1px solid transparent";
+			}
+		</script>
+</body>
+</html>
